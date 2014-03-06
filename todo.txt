@@ -1,0 +1,145 @@
+===========
+ HOME PAGE
+===========
+
+[FEATURES]
+  + saved
+    - desktop [DONE]
+    + mobile
+  + recent
+    - desktop [DONE]
+    + mobile
+
+[TODO]
+  - expandable content (research) on mobile [DONE]
+  - fix toggle expandable button value [DONE]
+  - radio button grid, check sends the correct value [DONE]
+  - geolocalization html5 [DONE]
+  - recent searches (javascript, local) [DONE]
+  - saved list (local, cookies, etc) [DONE]
+  - right column center elements when responsive [DONE]
+  - main carousel, make it more responsive and scrollable [DONE]
+  - search type text size [DONE]
+  - search type selection [DONE]
+  - featured icon [DONE]
+  - slidershow control hover [DONE]
+  - express quote icon [DONE]
+  - express quote year buttons hover effect [DONE]
+  - express quote year make bottom work [DONE]
+  - express quote form send test [DONE]
+  - express quote expands to showing nearest dealers and contact form [DONE]
+  - scroll to express quote when expanded [DONE]
+  - right column sticky [DONE]
+  - social on the header [DONE]
+  - social network icons [DONE]
+  - newsletter out of footer [DONE]
+  + don't apply affix when small
+  + mobile gestures
+  + research images
+  + reset button for saved list
+  + clear history for recent search
+* + recent search mobile
+* + saved list mobile
+  + disable elements style
+    + select, when dependable [DONE]
+    + models activates until make is selected
+    + slider, if checkbox selected
+  + new layout for saved list
+  
+  
+
+[ISSUES]
+  - tooltip del slider no se actualiza bien (remover el text balloon?)
+  - affix breaks when sidebar is longer than content
+
+
+=====
+ SRP
+=====
+
+[FEATURES]
+  + header
+  + filter
+  + search
+  + sort options
+  + pagination
+  + grid view
+    - vehicle
+  + list view
+    - vehicle
+    
+[TODO]
+  - copy paste to see the ads at 3rd and 6th line [DONE]
+  - in between ad (every 10 images) [DONE]
+  - go to homepage when click search [DONE]
+  - list view [DONE]
+  - change filter options [DONE]
+  - proper multiselect option [DONE]
+  - save as click [DONE]
+  + dealer as click
+  + title as click
+  ? dealer logo
+  + on resize switch to grid view if mobile
+
+=====
+ DVP
+=====
+[FEATURES]
+  + header (sticky)
+  + overview
+  + contact
+  + reviews
+  + send message
+  + slideshow with thumbnail navigation
+
+[TODO]
+  - sticky contact seller only [DONE]
+  - contatct seller is a title [DONE]
+  - fist name & last name in 2 inputs [DONE]
+  - email seller & request an internet price opens same modal [DONE]
+  - add personalize note expandable if people want to add more text [DONE]
+  - work on the slide show [DONE]
+  - picture click expands either black box or new page [DONE]
+  + fix arrows movement
+  
+===============
+dealer profile [DONE]
+===============
+http://www.carsoup.com/dealers/Car-Truck/Minnesota-Wisconsin/Krenzen-Auto-Mall/
+
+[TODO]
+ + modal form when clicking on $ We Buy
+
+===============
+THURSDAY 27 FEB
+===============
+
+home page
+  - not seeing the featured rotator as responsive [DONE]
+  - Max Price should be "Max Price (slider price) then Check box (any price) [DONE]
+  - featured box should all be the same height [DONE]
+  - Not getting the expand part of the express quote [DONE]
+  - recent is now blank - can you hard code in the list [DONE]
+  - saved - can you hard code in 4 bikes [DONE]
+  - Please collapse the research on tablet and mobile (+) to expand [DONE]
+ 
+SRP
+  - move model name to the same line as year make on the list view (if possible) [DONE]
+  + on filter can the cancel and update buttons be sticky 
+ 
+ 
+vdp
+  - contact form - email - phone - first name - last name - message - NO Subject line [DONE]
+  - thumbnails - single row [DONE]
+  - on the contact seller move the SEND button below the Add a personalized message [DONE]
+  - need to add instivin with image to vdp - see current site http://motorcycles.carsoup.com/details/used/2011/Suzuki/Other/36920229/  [DONE]
+
+Dealer Locator
+  - Find dealer button (make model ) is to high - not even with drop downs [DONE]
+ 
+Dealer Listing
+  - need a bar above specials calling them specials [DONE]
+  + We Buy - make bigger like view inventory - also need a modal - with Year, make, model, mileage, first name, last name , phone and email
+ 
+Top Nav -
+- Search - go to home page [DONE]
