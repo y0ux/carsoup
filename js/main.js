@@ -467,6 +467,46 @@ $(document).ready(function() {
     }
   });
   /*****************
+    SRP
+  *****************/
+  realignSRPItems();
+  function realignSRPItems() {
+    var viewport =  window.innerWidth || document.documentElement.clientWidth || $(window).width();
+    var container = $('#search-results');
+    if (viewport < 768 && !container.hasClass('detached')) {
+      // refactor items
+      var articles =  container.find('article').detach();
+      var advertising = container.find('.search-advertising').detach();
+      container.find('.row').remove();
+      var y = 0, z = 1;
+      for (var x = 0; x < articles.length; x+=2) {
+        container.append($(document.createElement('div')).addClass("row").append(articles.slice(x,x+2)));
+        if (z != 0 && z%4 == 0) {
+          console.log(x+" "+y+" "+z);
+          container.append(advertising.slice(y++));
+        }
+        z++;
+      }
+      container.addClass('detached');
+    }
+    else if (viewport > 767 && container.hasClass('detached')) {
+      // refactor items
+      var articles =  container.find('article').detach();
+      var advertising = container.find('.search-advertising').detach();
+      container.find('.row').remove();
+      var y = 0, z = 1;
+      for (var i = 0; i < articles.length; i+=3) {
+        container.append($(document.createElement('div')).addClass("row").append(articles.slice(i,i+3)));
+        if (z != 0 && z%3 == 0) {
+          container.append(advertising.slice(y++));
+        }
+        z++;
+      }
+      container.removeClass('detached');
+    }
+    //console.log($(window).width() +" - "+ window.innerWidth);
+  }
+  /*****************
     Express Code
   *****************/
   $('#express-form').submit(function() {
@@ -475,7 +515,7 @@ $(document).ready(function() {
       var target = $(this).data('target');
       $.getJSON($(this).prop('action'), function(data, textStatus, jqXHR) {
           //data is an object.
-          console.log(data);
+          //console.log(data);
           for (var i = 0; i < data.length; i++) {
             var span = $(document.createElement('span')).addClass("address").text(" "+data[i].address+" ~ "+data[i].distance+" "+data[i].distance_unit).prepend('<span class="glyphicon glyphicon-map-marker"></span>');
             span = $(document.createElement('span')).addClass("dealer").text(data[i].dealer).append(span);
@@ -486,7 +526,7 @@ $(document).ready(function() {
             });
             var label = $(document.createElement('label')).append(input,span);
             var divisor = $(document.createElement('div')).addClass('checkbox').append(label);
-            console.log(divisor);
+            //console.log(divisor);
             $('.json-response').append(divisor);
           }
            $(target).collapse({
@@ -552,6 +592,7 @@ $(document).ready(function() {
     addMobileChevronToList();
     updateAffixWidth();
     realignItems();
+    realignSRPItems();
   });
   $('.toggle-button').click(function() {
     $(this).toggleClass('button-on');

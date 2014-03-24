@@ -79,7 +79,7 @@
           <!-- search results -->
           <div id="search-results" class="row search-view-grid">
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -111,7 +111,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -143,7 +143,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -177,7 +177,7 @@
               </article>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -209,7 +209,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -241,7 +241,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -275,7 +275,7 @@
               </article>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -307,7 +307,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -339,7 +339,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -376,7 +376,7 @@
               <img src="img/300x250_uap.gif" alt="Banner Top"/>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -408,7 +408,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -440,7 +440,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -474,7 +474,7 @@
               </article>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -506,7 +506,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -538,7 +538,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -572,7 +572,7 @@
               </article>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -604,7 +604,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -636,7 +636,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -673,7 +673,7 @@
               <img src="img/300x250_uap.gif" alt="Banner Top"/>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -705,7 +705,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -737,7 +737,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -771,7 +771,7 @@
               </article>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -803,7 +803,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -835,7 +835,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -869,7 +869,7 @@
               </article>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -901,7 +901,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -933,7 +933,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -970,7 +970,7 @@
               <img src="img/300x250_uap.gif" alt="Banner Top"/>
             </div>
             <div class="row">
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-01.png" alt="moto 01"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -1002,7 +1002,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-02.png" alt="moto 02"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
@@ -1034,7 +1034,7 @@
                   </span>
                 </div>
               </article>
-              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-4 col-xxs-12">
+              <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
                 <div class="article-image-container">
                   <a href="vdp.php"><img src="img/motos/moto-03.png" alt="moto 03"/></a>
                   <div class="image-counter text-sm label"><span class="glyphicon glyphicon-camera"></span> 53</div>
