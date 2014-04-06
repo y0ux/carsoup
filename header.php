@@ -41,7 +41,7 @@
             <li class="active"><a href="/">Search</a></li>
             <li><a href="dealer-locator.php">Dealers</a></li>
             <li><a href="#">Sell</a></li>
-            <li><a href="#">Research</a></li>
+            <li><a href="research.php">Research</a></li>
           </ul>
           
           <ul class="social-links list-inline">

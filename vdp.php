@@ -70,7 +70,7 @@
                 <a class="carousel-control right" href="#vdp-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                 
                 <!-- thumb navigation carousel items -->
-                <div class="col-md-12 visible-xs">
+                <div class="col-md-12 visible-xs dots-container">
                   <ul class="list-inline carousel-indicators">
                     <li class="col-lg-2 active" data-target="#vdp-carousel" data-slide-to="0"></li>
                     <li class="col-lg-2" data-target="#vdp-carousel" data-slide-to="1"></li>

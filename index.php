@@ -146,7 +146,7 @@
                     </div>
                   </div>
                   <div class="form-group col-lg-3 col-md-4 col-sm-3 submit-group">
-                    <button type="submit" class="btn btn-callOA .btn-lg">Go</button>
+                    <button type="submit" class="btn btn-callOA btn-lg">Go</button>
                   </div>
                 </div>
               </div>

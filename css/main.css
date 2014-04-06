@@ -17,6 +17,7 @@ section > header {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+.subtitle,
 section > header .subtitle,
 header.article-header .subtitle {
   color: #95979c;
@@ -113,6 +114,8 @@ a:visited {
   background: #f1c40f;
   border-bottom: 3px solid #be9310;
 }
+.btn-important:visited,
+.btn-important:link,
 .btn-important{
   color: #333;
   background: #f1c40f;
@@ -998,6 +1001,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   position:  relative;
   margin: 10px 0;
 }
+.vehicle-overview .dots-container ul.carousel-indicators {
+  z-index: 1;
+}
 .vehicle-overview .thumbs-container ul.carousel-indicators {
   /* overflow: hidden; */
   margin: 0;
@@ -1195,6 +1201,121 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   border-left: 1px solid #eee;
 }
 /* ==========================================================================
+   Research
+   ========================================================================== */
+#research h2 {
+  background-color: #d6d6cf;
+  color: #333;
+  padding: 15px 15px;
+}
+#research .type-list,
+#research .make-list {
+  text-align: center;
+}
+#research .row {
+  margin-bottom: 5px;
+}
+#research a{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#research a:hover,
+#research a:focus{
+  background-color: #f1c40f;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+#research a span{
+  display: block;
+}
+#research .make-list img{
+  max-width: 60px;
+}
+#research-selection h2 {
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+}
+#research-selection h2 img {
+  float: left;
+}
+#research-selection h2 span {
+  display: block;
+  font-size: .6em;
+}
+#research-detail h2 {
+  background-color: #eee;
+  padding: 15px 10px;
+  text-align: center;
+}
+#research-detail h2 img {
+  max-width: 40px;
+}
+#research-detail dt {
+  color: #9a9999;
+  font-weight: normal;
+}
+#research-detail dd {
+  color: #2e2f31;
+}
+#research-detail .tab-pane {
+  padding: 15px 0;
+}
+#research-detail .detail-color {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+#research-detail .nav-tabs a {
+  padding: 10px;
+}
+#research-detail .dealer-quote {
+  padding: 10px;
+}
+#research-detail .dealer-quote h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+#research-detail .dealer-quote label,
+#research-detail .dealer-quote p {
+  color: #856b04;
+  font-weight: normal;
+}
+#research-detail .dealer-quote label {
+  display: block;
+}
+#research-detail .dealer-quote .form-group {
+  float: left;
+  width: 70%;
+}
+#research-detail .dealer-quote button {
+  float: left;
+  margin-left: 3%;
+  width: 25%;
+}
+#research-detail .insurance-quote {
+  padding: 15px 0;
+}
+#research-detail .insurance-quote a {
+  display: block;
+  color: #333;
+}
+#research-detail .local-dealers h3 {
+  background-color: #f7f4ed;
+  margin: 5px 0 10px;
+  padding: 10px;
+}
+#research-detail .local-dealers article {
+  /* border-bottom: 1px solid #d6d6cf; */
+  margin-bottom: 15px;
+}
+#research-detail .local-dealers article dt,
+#research-detail .local-dealers article dd {
+  color: #9a9999;
+}
+/* ==========================================================================
    Footer
    ========================================================================== */
 .top-footer {
@@ -1379,6 +1500,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   #dealer-profile-page .dealer-title h1 {
     margin-top: 15px;
   }
+  #research .type-list a {
+    min-height: 71px;
+  }
   .mobile-list li {
     display: block;
     border-bottom: 1px dotted #c0392b;
@@ -1462,6 +1586,13 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     padding: 3px 8px;
     font-size: .85em;
   }
+  #research .make-list span {
+    min-height: 40px;
+  }
+  #research .type-list img,
+  #research .make-list img {
+    width: auto;
+  }
   .remove-float-xxs {
     float: none !important;
   }
@@ -1520,6 +1651,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   .text-xxs-center {
     text-align: center;
+  }
+  .pull-none-xxs {
+    float: none !important;
   }
   h1, .h1{
     font-size: 24px;
