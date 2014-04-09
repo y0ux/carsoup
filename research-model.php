@@ -83,7 +83,7 @@ $years = array_keys($imageModels['honda']);
                   <?php foreach ($yearList as $model => $modelDetail) : ?>
                 <article class="item col-lg-4 col-md-4 col-sm-6" data-groups='["<?php echo str_replace(" ", "", strtolower($modelDetail['body']) ); ?>","<?php echo "y".$year; ?>"]' data-title="<?php echo strtolower($modelDetail['name']); ?>">
                   <div class="article-wrapper">
-                    <h3 class="text-center"><a href="research-trim.php"><?php echo ucwords($model); ?></a></h3>
+                    <h3 class="text-center"><a href="research-detail.php"><?php echo ucwords($model); ?></a></h3>
                     <a href="research-trim.php" title="<?php echo $modelDetail['file']; ?>" class="img-link" ><img src="img/research/<?php echo $brand ?>/<?php echo $modelDetail['file']; ?>" alt="<?php echo $modelDetail['alt']; ?>" /></a>
                     <h4>General Details</h4>
                     <p><span class="label label-default"><?php echo $year; ?></span></p>
