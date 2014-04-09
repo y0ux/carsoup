@@ -98,7 +98,8 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/bootstrap-slider.js"></script>
     <script src="js/vendor/jquery.cookie.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/vendor/jquery.shuffle.min.js"></script>
+    <!--script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script-->
     <script src="js/main.js"></script>
     <!--script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

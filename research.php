@@ -10,7 +10,7 @@
 
                 
                 <div class="type-list">
-                  <?php require_once('research-type.php'); ?>
+                  <?php require_once('research-type-list.php'); ?>
                 </div>
                 
               </section>
@@ -19,7 +19,7 @@
                 <h2>Research by Make</h2>
                 
                 <div class="make-list">
-                  <?php require_once('research-make.php'); ?>
+                  <?php require_once('research-make-list.php'); ?>
                 </div>
                 
               </section>

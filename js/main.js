@@ -538,6 +538,168 @@ $(document).ready(function() {
       });
     }
   });
+
+  /***********************
+    Shuffle Sort & Filter
+  ***********************/
+  var $grid = $('#model-grid'),
+    //$filterOptions = $('.filter-options'),
+    $sizer = $grid.find('.shuffle__sizer');//,
+
+  // init = function() {
+    // None of these need to be executed synchronously
+    setTimeout( function() {
+      listen();
+      setupFilters();
+      setupSorting();
+      // setupSearching();
+    }, 100);
+
+    // instantiate the plugin
+    $grid.shuffle({
+      itemSelector: '.item',
+      // sizer: $sizer
+    });
+
+    // Destroy it! o_O
+    // $grid.shuffle('destroy');
+  // },
+
+  // Set up button clicks
+  setupFilters = function() {
+    var filterTypes = '',
+        filterYear = '';
+        
+    var $btns = $('.filter-btn'); //$filterOptions.children();
+    $btns.on('click', function() {
+      filterYear = '';
+      var $this = $(this),
+          isActive = $this.hasClass( 'active' );//,
+      
+      if (!isActive)
+        filterYear = $this.data('group');
+
+      // Hide current label, show current label in title
+      if ( !isActive ) {
+        $('.filter-options .active').removeClass('active');
+      }
+      $this.toggleClass('active');
+      
+      console.log("hola");
+      // Filter elements
+      //$grid.shuffle( 'shuffle', group );
+      startShuffle(filterTypes,filterYear);
+    });
+    $btns = null;
+    
+    var $select = $('.filter-select'); //$filterOptions.children();
+    $select.on('change', function() {
+      //filterTypes = '';
+        filterTypes = this.value? this.value : '';
+
+      // Filter elements
+      //$grid.shuffle( 'shuffle', group );
+      startShuffle(filterTypes,filterYear);
+    });
+    $select = null;
+    
+  };//,
+  function startShuffle( type,year)
+  {
+    //console.log (g);
+    if (type.length || year.length) {
+      $grid.shuffle('shuffle', function($el, shuffle) {
+        console.log(type+" "+year+" "+$el.data('groups'));
+        if (type.length === 0 || year.length === 0) {
+          return $el.data('groups').indexOf(type) !== -1 || $el.data('groups').indexOf(year) !== -1 ;
+        }
+        else
+          return $el.data('groups').indexOf(type) !== -1 && $el.data('groups').indexOf(year) !== -1 ;
+      });
+    } else {
+      $grid.shuffle( 'shuffle', 'all' );
+    }
+  }
+  
+
+  setupSorting = function() {
+    // Sorting options
+    $('.sort-options').on('change', function() {
+      var sort = this.value,
+          opts = {};
+
+      // We're given the element wrapped in jQuery
+      if ( sort === 'date-created' ) {
+        opts = {
+          reverse: true,
+          by: function($el) {
+            return $el.data('date-created');
+          }
+        };
+      } else if ( sort === 'title' ) {
+        opts = {
+          by: function($el) {
+            return $el.data('title').toLowerCase();
+          }
+        };
+      }
+
+      // Filter elements
+      $grid.shuffle('sort', opts);
+    });
+  };//,
+
+  // setupSearching = function() {
+    // // Advanced filtering
+    // $('.js-shuffle-search').on('keyup change', function() {
+      // var val = this.value.toLowerCase();
+      // $grid.shuffle('shuffle', function($el, shuffle) {
+
+        // // Only search elements in the current group
+        // if (shuffle.group !== 'all' && $.inArray(shuffle.group, $el.data('groups')) === -1) {
+          // return false;
+        // }
+
+        // var text = $.trim( $el.find('.picture-item__title').text() ).toLowerCase();
+        // return text.indexOf(val) !== -1;
+      // });
+    // });
+  // };//,
+
+  // Re layout shuffle when images load. This is only needed
+  // below 768 pixels because the .picture-item height is auto and therefore
+  // the height of the picture-item is dependent on the image
+  // I recommend using imagesloaded to determine when an image is loaded
+  // but that doesn't support IE7
+  listen = function() {
+    var debouncedLayout = $.throttle( 300, function() {
+      $grid.shuffle('update');
+    });
+
+    // Get all images inside shuffle
+    $grid.find('img').each(function() {
+      var proxyImage;
+
+      // Image already loaded
+      if ( this.complete && this.naturalWidth !== undefined ) {
+        return;
+      }
+
+      // If none of the checks above matched, simulate loading on detached element.
+      proxyImage = new Image();
+      $( proxyImage ).on('load', function() {
+        $(this).off('load');
+        debouncedLayout();
+      });
+
+      proxyImage.src = this.src;
+    });
+
+    // Because this method doesn't seem to be perfect.
+    setTimeout(function() {
+      debouncedLayout();
+    }, 500);
+  };
   
   
   /*****************
