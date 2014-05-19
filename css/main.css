@@ -1268,7 +1268,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   max-width: 60px;
 }
 #research.launch-soon {
-  margin-top: 150px;
+  margin-top: 20px;
 }
 #research.launch-soon .rocket {
   font-size: 200px;
@@ -1732,6 +1732,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   #research.launch-soon {
     margin: 20px;
   }
+  #research.launch-soon .rocket {
+    font-size: 100px;
+  }
   #research.launch-soon .information {
     padding: 0 20px;
   }
@@ -2062,6 +2065,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+  #research.launch-soon {
+    margin-top: 150px;
   }
 }
 @media (min-width: 1200px) {
