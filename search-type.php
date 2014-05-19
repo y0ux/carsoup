@@ -4,7 +4,8 @@
   
   for($i = 0; $i < count($vehicleTypes); $i++) :
     $vehicle = $vehicleTypes[$i];
-    is_array($vehicles) || break;
+    if (!is_array($vehicles))
+      break;
   ?>
 
                       <div class="radio col-lg-1 col-md-1 col-sm-1 col-xs-6">

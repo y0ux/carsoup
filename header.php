@@ -40,7 +40,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="/">Search</a></li>
             <li><a href="dealer-locator.php">Dealers</a></li>
-            <li><a href="#">Sell</a></li>
+            <li><a href="sell.php">Sell</a></li>
             <li><a href="research.php">Research</a></li>
           </ul>
           
@@ -64,4 +64,4 @@
   
     <main class="container">
       <!-- Main content -->
-      <div class="col-lg-8 col-md-8">
+      <div id="page-content" class="col-lg-8 col-md-8">

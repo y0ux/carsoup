@@ -93,6 +93,9 @@ a:visited {
 .btn-lg {
   border-radius: 4px;
 }
+.btn-xxl {
+  
+}
 .btn-default {
   color: #777;
   background: #d4d3d1;
@@ -127,6 +130,8 @@ a:visited {
   background: #5f6064;
   border-bottom: 3px solid #2e2f31;
 }
+a.btn-callOA-contrast,
+.btn-callOA-contrast,
 a.btn-callOA,
 .btn-callOA {
   background: #e74c3c;
@@ -139,6 +144,12 @@ a.btn-callOA,
   background: #f1c40f;
   border-bottom: 3px solid #e67e22;
   color: #2e2f31;
+}
+.btn-callOA-contrast:hover,
+.btn-callOA-contrast:focus {
+  color: #fff;
+  background: #5f6064;
+  border-bottom: 3px solid #2e2f31;
 }
 .label-price {
   background: #f1c40f;
@@ -215,12 +226,27 @@ a.btn-callOA,
   float: none;
   margin: 0 auto;
 }
+.block-relative {
+  position: relative;
+}
+.block-bottom-right {
+  float: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .contrast-dark {
   color: #fff;
   background: #5f6064;
 }
+.text-bold {
+  font-weight: 700;
+}
 .text-secondary {
   color: #95979c;
+}
+.text-callOA {
+  color: #e74c3c;
 }
 .inline-block {
   display: inline-block;
@@ -256,6 +282,10 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 }
 .toggle-button.button-on span.on {
   display: inline;
+}
+.form-required:before {
+  color: #e74c3c;
+  content: '* ';
 }
 /* ==========================================================================
    Header
@@ -375,6 +405,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .basic-search .slider.slider-horizontal {
   width: 100% !important;
 }
+.form-small-text,
 .basic-search .small-form-text {
   font-size: 10px;
   color: #999;
@@ -1236,6 +1267,36 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 #research .make-list img{
   max-width: 60px;
 }
+#research.launch-soon {
+  margin-top: 150px;
+}
+#research.launch-soon .rocket {
+  font-size: 200px;
+  color: #e74c3c;
+  text-align: center;
+  float: right;
+}
+#research.launch-soon .information {
+  padding: 0 50px;
+}
+#research.launch-soon .list-container {
+  background-color: #f1c40f;
+  text-align: center;
+}
+#research.launch-soon ul {
+  color: #fff;
+  padding: 15px 15px;
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+#research.launch-soon ul li:before {
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  content: "\e013  ";
+  color: #b7961f;
+}
 #research-selection h2 {
   text-align: center;
   color: #333;
@@ -1359,6 +1420,33 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 #research-detail .local-dealers article dt,
 #research-detail .local-dealers article dd {
   color: #9a9999;
+}
+
+/* ==========================================================================
+   Sell
+   ========================================================================== */
+.sell-feedback {
+  background-color: #f7f4ed;
+  overflow: hidden;
+  padding: 0 15px;
+}
+#sell-form {
+  /*min-height: 600px*/
+}
+
+#sell-form .form-steps {
+  margin: 30px 0;
+  text-align: center;
+}
+
+#sell-form .form-steps li {
+  background-color: #ddd;
+  padding: 10px 15px;
+  margin: 0;
+  display: block;
+}
+#sell-form .form-steps li.active {
+  background-color: #f1c40f;
 }
 /* ==========================================================================
    Footer
@@ -1548,6 +1636,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   #research .type-list a {
     min-height: 71px;
   }
+  #research.launch-soon .rocket {
+    float: none;
+  }
   .mobile-list li {
     display: block;
     border-bottom: 1px dotted #c0392b;
@@ -1637,6 +1728,12 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   #research .type-list img,
   #research .make-list img {
     width: auto;
+  }
+  #research.launch-soon {
+    margin: 20px;
+  }
+  #research.launch-soon .information {
+    padding: 0 20px;
   }
   .remove-float-xxs {
     float: none !important;
@@ -1772,6 +1869,15 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   a.visible-xxs{
     display: inline !important;
   }
+  .block-relative-xxs {
+    position: relative;
+  }
+  .block-bottom-right-xxs {
+    float: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #dealer-profile-page .dealer-buttons {
@@ -1820,6 +1926,15 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     margin-right: 5px;
     content: "\25cf";
   }
+  .block-relative-xs {
+    position: relative;
+  }
+  .block-bottom-right-xs {
+    float: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 @media (min-width: 768px) {
   body {
@@ -1860,6 +1975,43 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   ul.mobile-list li:before {
     content: '\00BB  ';
+  }
+  .block-relative-sm {
+    position: relative;
+  }
+  .block-bottom-right-sm {
+    float: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  #sell-form .form-steps li {
+    padding-left: 30px;
+    padding-right: 10px;
+    display: block;
+    float: left;
+    position: relative;
+  }
+  #sell-form .form-steps li:first-of-type {
+    padding-left: 20px;
+  }
+  #sell-form .form-steps li:before,
+  #sell-form .form-steps li:after {
+    border-style: solid;
+    border-color: transparent transparent transparent #ddd;
+    border-width: 20px 0 20px 20px;
+    content:'';
+    position: absolute;
+    right: -20px;
+    top: 0;
+    z-index: 1;
+  }
+  #sell-form .form-steps li:before {
+    right: -21px;
+    border-left-color: #bbb;
+  }
+  #sell-form .form-steps li.active:after {
+    border-left-color: #f1c40f;
   }
 }
 @media (min-width: 992px) {
@@ -1902,6 +2054,15 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   ul.rl-md-1 li{
     width: 100%;
   }
+  .block-relative-md {
+    position: relative;
+  }
+  .block-bottom-right-md {
+    float: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 @media (min-width: 1200px) {
   #dealer-search-manufacturer form button {
@@ -1940,7 +2101,20 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   td.visible-lg {
     display: table-cell !important;
   }
+  .block-relative-lg {
+    position: relative;
+  }
+  .block-bottom-right-lg {
+    float: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
+
+/* ==========================================================================
+   Font
+   ========================================================================== */
 @font-face {
 	font-family: 'icons';
 	src:url('../fonts/icons.eot?uiqg95');
