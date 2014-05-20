@@ -2122,6 +2122,223 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
    Font
    ========================================================================== */
 @font-face {
+	font-family: 'carsoup-icons';
+	src:url('../fonts/carsoup-icons.eot?-2mvbk');
+	src:url('../fonts/carsoup-icons.eot?#iefix-2mvbk') format('embedded-opentype'),
+		url('../fonts/carsoup-icons.woff?-2mvbk') format('woff'),
+		url('../fonts/carsoup-icons.ttf?-2mvbk') format('truetype'),
+		url('../fonts/carsoup-icons.svg?-2mvbk#carsoup-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'carsoup-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rocket:before {
+	content: "\e600";
+}
+.icon-location:before {
+	content: "\e0a5";
+}
+.icon-location2:before {
+	content: "\e0a6";
+}
+.icon-location3:before {
+	content: "\e0a7";
+}
+.icon-location4:before {
+	content: "\e0a8";
+}
+.icon-compass:before {
+	content: "\e0a9";
+}
+.icon-compass2:before {
+	content: "\e0aa";
+}
+.icon-map:before {
+	content: "\e0ab";
+}
+.icon-map2:before {
+	content: "\e0ac";
+}
+.icon-map3:before {
+	content: "\e0ad";
+}
+.icon-print:before {
+	content: "\e0bd";
+}
+.icon-print2:before {
+	content: "\e0be";
+}
+.icon-screen:before {
+	content: "\e0c2";
+}
+.icon-mobile:before {
+	content: "\e0c5";
+}
+.icon-mobile2:before {
+	content: "\e0c6";
+}
+.icon-tablet:before {
+	content: "\e0c7";
+}
+.icon-equalizer:before {
+	content: "\e141";
+}
+.icon-aid:before {
+	content: "\e14e";
+}
+.icon-rocket2:before {
+	content: "\e17f";
+}
+.icon-meter:before {
+	content: "\e180";
+}
+.icon-meter2:before {
+	content: "\e181";
+}
+.icon-meter-slow:before {
+	content: "\e182";
+}
+.icon-meter-medium:before {
+	content: "\e183";
+}
+.icon-meter-fast:before {
+	content: "\e184";
+}
+.icon-dashboard:before {
+	content: "\e185";
+}
+.icon-remove:before {
+	content: "\e192";
+}
+.icon-road:before {
+	content: "\e1a0";
+}
+.icon-target:before {
+	content: "\e1b0";
+}
+.icon-globe:before {
+	content: "\e1d8";
+}
+.icon-star:before {
+	content: "\e206";
+}
+.icon-star2:before {
+	content: "\e207";
+}
+.icon-star3:before {
+	content: "\e208";
+}
+.icon-star4:before {
+	content: "\e209";
+}
+.icon-star5:before {
+	content: "\e20a";
+}
+.icon-star6:before {
+	content: "\e20b";
+}
+.icon-share:before {
+	content: "\e318";
+}
+.icon-share2:before {
+	content: "\e31f";
+}
+.icon-share3:before {
+	content: "\e320";
+}
+.icon-google:before {
+	content: "\e325";
+}
+.icon-google-plus:before {
+	content: "\e326";
+}
+.icon-google-plus2:before {
+	content: "\e328";
+}
+.icon-googleplus3:before {
+	content: "\e329";
+}
+.icon-google-drive:before {
+	content: "\e32a";
+}
+.icon-facebook2:before {
+	content: "\e32b";
+}
+.icon-instagram:before {
+	content: "\e32e";
+}
+.icon-twitter:before {
+	content: "\e32f";
+}
+.icon-youtube:before {
+	content: "\e335";
+}
+.icon-youtube2:before {
+	content: "\e336";
+}
+.icon-vimeo:before {
+	content: "\e337";
+}
+.icon-flickr:before {
+	content: "\e33b";
+}
+.icon-picassa:before {
+	content: "\e33f";
+}
+.icon-dribbble:before {
+	content: "\e341";
+}
+.icon-linkedin:before {
+	content: "\e361";
+}
+.icon-delicious:before {
+	content: "\e364";
+}
+.icon-pinterest:before {
+	content: "\e368";
+}
+.icon-pinterest2:before {
+	content: "\e369";
+}
+.icon-html5:before {
+	content: "\e37c";
+}
+.icon-html52:before {
+	content: "\e37d";
+}
+.icon-css3:before {
+	content: "\e37e";
+}
+.icon-chrome:before {
+	content: "\e37f";
+}
+.icon-firefox:before {
+	content: "\e380";
+}
+.icon-IE:before {
+	content: "\e381";
+}
+.icon-opera:before {
+	content: "\e382";
+}
+.icon-safari:before {
+	content: "\e383";
+}
+/*@font-face {
 	font-family: 'icons';
 	src:url('../fonts/icons.eot?uiqg95');
 	src:url('../fonts/icons.eot?#iefixuiqg95') format('embedded-opentype'),
@@ -2141,7 +2358,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 	text-transform: none;
 	line-height: 1;
 
-	/* Better Font Rendering =========== */
+	/* Better Font Rendering =========== * /
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -2275,6 +2492,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .icon-star3:before {
 	content: "\e62a";
 }
-
+*/
 
 
