@@ -1276,6 +1276,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   text-align: center;
   float: right;
 }
+#research.launch-soon .rocket span {
+  text-shadow: 2px 2px 0px #c0392b;
+}
 #research.launch-soon .information {
   padding: 0 50px;
 }
@@ -2275,7 +2278,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .icon-google-drive:before {
 	content: "\e32a";
 }
-.icon-facebook2:before {
+.icon-facebook:before {
 	content: "\e32b";
 }
 .icon-instagram:before {

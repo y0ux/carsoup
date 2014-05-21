@@ -27,7 +27,7 @@
             */ ?>
             <article id="research" class="launch-soon">
               <div class="rocket col-sm-6">
-                <span class="glyphicon glyphicon-plane"></span>
+                <span class="icon-rocket"></span>
               </div>
               <div class="information col-sm-6">
                 <h1 class="text-center">Launching Soon</h1>
