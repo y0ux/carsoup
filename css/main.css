@@ -767,6 +767,18 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   color: #999;
   margin-right: 25px;
 }
+.page-sorting .ordering-view {
+  margin: 0 -3px;
+}
+.page-sorting .ordering-view li {
+  padding: 0 3px;
+}
+.page-sorting .ordering-view li .btn {
+  width: 100%;
+}
+.page-sorting .ordering-view li:first-child .btn {
+  margin-left: 0;
+}
 .page-sorting .sorting-options {
   margin-bottom: 0;
 }
@@ -1602,8 +1614,8 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   #srp-page header {
     margin: 0;
-    border: 0;
-    margin: 0;
+    /*border: 0;*/
+    margin: 0 -15px;
     text-align: center;
   }
   #srp-page .action-group {
@@ -1613,6 +1625,38 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   #srp-page .action-group .btn {
     width: 49%;
+  }
+  #srp-page .action-group-mobile {
+    background-color: #fff;
+    border-top: 1px solid #999;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1051;
+  }
+  #srp-page .action-group-mobile .btn {
+    border-radius: 0;
+    background-color: transparent;
+    color: #999;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid #999;
+  }
+  #srp-page .action-group-mobile .btn .glyphicon {
+    color: #333;
+  }
+  #srp-page .action-group-mobile .btn:focus,
+  #srp-page .action-group-mobile .btn:hover,
+  #srp-page .action-group-mobile .btn.active {
+    background-color: #f1c40f;
+    color: #333;
+  }
+  #srp-page .action-group-mobile .btn:focus .glyphicon,
+  #srp-page .action-group-mobile .btn:hover .glyphicon,
+  #srp-page .action-group-mobile .btn.active .glyphicon {
+    color: #fff;
   }
   #srp-page .page-sorting {
     padding: 0;

@@ -1,5 +1,13 @@
           <!-- sorting -->
           <div class="page-sorting float-fix">
+            <ul class="list-unstyled ordering-view hidden-xs row">
+              <li class="col-sm-5"><button class="btn btn-lg btn-default" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-filter"></span> Filter</button></li>
+              <li class="col-sm-5"><button class="btn btn-lg btn-default" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-sort"></span> Sort</button></li>
+              <li class="col-sm-1"><button type="button" class="btn btn-lg btn-default view-button active" value="grid-view" title="Grid View" data-target="#search-results" data-view="search-view-grid"><span class="glyphicon glyphicon-th"></span></button></li>
+              <li class="col-sm-1"><button type="button" class="btn btn-lg btn-default view-button" value="list-view" title="List View" data-target="#search-results" data-view="search-view-list"><span class="glyphicon glyphicon-th-list"></span></button></li>
+            </ul>
+            
+            <div class="collapse">
               <h4 class="h6 pull-left">Sort by</h4>
               <ul class="sorting-options list-inline pull-left hidden-xs text-center">
                 <li class="pull-left">
@@ -44,8 +52,9 @@
                   </div>
                   <p class="sort-label reset-margin-padding">Distance</p>
                 </li>
-                
               </ul>
+            </div>
+            <div class="collapse">
               <select class="form-control visible-xs sort-trigger">
                 <option data-value="updated-first" value="updated-first">Recently updated first</option>
                 <option data-value="updated-last" value="updated-last">Recently updated last</option>
@@ -56,10 +65,7 @@
                 <option data-value="featured-first" value="featured-first">Featured newst year</option>
                 <option data-value="featured-last" value="featured-last">Featured oldest year</option>
               </select>
-              <div class="ordering-view pull-right hidden-xs">
-                <button type="button" class="btn-lg btn-default view-button active" value="grid-view" title="Grid View" data-target="#search-results" data-view="search-view-grid"><span class="glyphicon glyphicon-th"></span></button>
-                <button type="button" class="btn-lg btn-default view-button" value="list-view" title="List View" data-target="#search-results" data-view="search-view-list"><span class="glyphicon glyphicon-th-list"></span></button>
-              </div>
+            </div>
           </div>
           
           <!-- navigation -->

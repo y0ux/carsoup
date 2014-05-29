@@ -15,13 +15,11 @@ $zipCode = isset($_GET['zipCode']) && $_GET['zipCode']? ucwords($_GET['zipCode']
           <!-- header -->
           <header class="">
             <h1 class="section-title"><?php echo $make.$model ?> <span class="h4 subtitle"><?php echo $type ?> </span></h1>
-            <div class="h5 col-lg-6 col-md-6 col-sm-6 col-xs-12 reset-margin-padding subtitle">
+            <div class="h5 col-md-10 col-sm-8 col-xs-12 reset-margin-padding subtitle">
               <div class="h4 reset-margin-padding"><?php echo $price ?>  - <span class="glyphicon glyphicon-map-marker"></span> <?php echo $zipCode ?> <span class="geocode-zipcode" data-value="<?php echo $zipCode ?>"><span></div>
               <div>(3,500 results)</div>
             </div>
-            <div class="action-group col-lg-4 col-md-6 col-sm-6 col-xs-12 pull-right text-right reset-side-padding">
-              <!-- Standard button -->
-              <button class="btn btn-lg btn-default relevant" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+            <div class="action-group col-lg-2 col-md-2 col-sm-2 col-xs-12 pull-right text-right reset-side-padding hidden-xs">
               <a class="btn btn-lg btn-default search-button" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
             </div>
           </header>
@@ -29,6 +27,12 @@ $zipCode = isset($_GET['zipCode']) && $_GET['zipCode']? ucwords($_GET['zipCode']
           <?php require_once('modal-filter.php'); ?>
           
           <?php require_once('search-results.php'); ?>
+          
+          <div class="action-group-mobile visible-xs">
+            <button class="btn col-xs-4 col-xxs-4" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+            <button class="btn col-xs-4 col-xxs-4" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-sort"></span> Sort</button>
+            <a class="btn col-xs-4 col-xxs-4" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
+          </div>
         
         </section>
 
