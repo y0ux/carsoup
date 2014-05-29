@@ -22,16 +22,10 @@
           <div class="vehicle-contact float-fix contrast-dark affix-this">
             <ul class="list-inline text-center">
               <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="h5">Contact Seller</span></li>
-              <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="glyphicon glyphicon-envelope"></span> <a href="#" class="h5" data-toggle="modal" data-target="#messageModal">Email Seller</a></li>
-              <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="glyphicon glyphicon-earphone"></span> <a href="#" class="h5">603.578.3744</a></li>
-              <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="glyphicon icon-map"></span> <a href="#" class="h5">Maps &amp; Directions</a></li>
+              <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="glyphicon glyphicon-envelope"></span> &nbsp;<a href="#" class="h5" data-toggle="modal" data-target="#messageModal">Email Seller</a></li>
+              <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="glyphicon glyphicon-earphone"></span> &nbsp;<a href="#" class="h5">603.578.3744</a></li>
+              <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><span class="glyphicon icon-map"></span> &nbsp;<a href="#" class="h5">Maps &amp; Directions</a></li>
             </ul>
-            <div class="action-group text-center">
-              <!-- Standard button -->
-              <button class="btn btn-xs btn-important" data-toggle="modal" data-target="#messageModal">Request an Internet Price</button>
-              <button class="btn btn-xs btn-important">Calculate Payments</button>
-              <button class="btn btn-xs btn-important">Financing Options</button>
-            </div>
           </div>
 
           <section class="vehicle-overview col-lg-6 col-md-6 col-sm-6 pull-left">
@@ -154,16 +148,22 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
           
           <section class="vehicle-dealer col-lg-6 col-md-6 col-sm-6 pull-right">
             <h2>Luther Honda House Powersports</h2>
-            <ul class="list-unstyled">
-              <li></li>
-              <li><span class="glyphicon glyphicon-earphone"></span> (603) 578 3744</li>
-              <li><span class="glyphicon glyphicon-map-marker"></span> 539 Riverdale St.<br/>West Sprinfield, MA 01089</li>
-              <li><span class="glyphicon icon-map"></span> <a href="#">Map & directions</a></li>
-              <li><span class="glyphicon glyphicon-envelope"></span> <a href="#" data-toggle="modal" data-target="#messageModal">Email seller</a></li>
-              <li><span class="glyphicon glyphicon-home"></span> <a href="#">Visit dealer website</a></li>
-              <li>Dealer Rating <span class="glyphicon icon-star3"></span><span class="glyphicon icon-star3"></span><span class="glyphicon icon-star3"></span><span class="glyphicon icon-star"></span><span class="glyphicon icon-star2"></span> 3.5 out of 5 <a href="#">(?)</a></li>
+            <dl class="list-unstyled details">
+              <dt><span class="glyphicon glyphicon-earphone"></span></dt> <dd>(603) 578 3744</dd>
+              <dt><span class="glyphicon glyphicon-map-marker"></span></dt> <dd>539 Riverdale St. West Sprinfield, MA 01089</dd>
+              <dt><span class="glyphicon icon-map"></span></dt> <dd><a href="#">Map & directions</a></dd>
+              <dt><span class="glyphicon glyphicon-envelope"></span></dt> <dd><a href="#" data-toggle="modal" data-target="#messageModal">Email seller</a></dd>
+              <dt><span class="glyphicon glyphicon-home"></span></dt> <dd><a href="#">Visit dealer website</a></dd>
+              <dt>Dealer Rating <span class="glyphicon icon-star3"></span><span class="glyphicon icon-star3"></span><span class="glyphicon icon-star3"></span><span class="glyphicon icon-star"></span><span class="glyphicon icon-star2"></span> 3.5 out of 5 <a href="#">(?)</a></dt>
+            </dl>
+            <ul class="list-unstyled action-group">
+              <li><button class="btn btn-xs btn-important" data-toggle="modal" data-target="#messageModal">Request an Internet Price</button></li>
+              <li><button class="btn btn-xs btn-important">Calculate Payments</button></li>
+              <li><button class="btn btn-xs btn-important">Financing Options</button></li>
             </ul>
-            <p class="float-fix"><a href="dealer-profile.php" class="btn btn-default btn-xs relevant pull-right">View all inventory &#187;</a></p>
+            <ul class="list-unstyled text-right action-group">
+              <li><a href="dealer-profile.php" class="btn btn-default btn-xs relevant">View all inventory &#187;</a></li>
+            </ul>
             <h3 class="contrast-dark">Send Message to Seller</h3>
             <form class="web-message" role="form" action="vdp.php" method="post">
               <p class="form-group">Hi, my name is

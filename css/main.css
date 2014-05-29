@@ -986,15 +986,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .vehicle-contact a{
   color: #fff;
 }
-.vehicle-contact .action-group button {
-  margin: 10px 10px 0;
-}
-.vehicle-contact .action-group button:hover,
-.vehicle-contact .action-group button:focus {
-  background: #ebebeb;
-  border-bottom-color: #adadad;
-  color: #2e2f31;
-}
 .vehicle-overview .carousel-indicators li {
   background: #f1c40f;
 }
@@ -1105,8 +1096,30 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .vehicle-dealer h3 {
   padding: 8px 15px;
 }
+.vehicle-dealer dl .glyphicon {
+  color: #ccc;
+}
+.vehicle-dealer dl .icon-star,
+.vehicle-dealer dl .icon-star2,
+.vehicle-dealer dl .icon-star3 {
+  color: #c0392b;
+}
+.vehicle-dealer dt {
+  font-weight: normal;
+  float: left;
+  margin-right: 10px;
+}
 .vehicle-dealer .form-control {
   display: inline-block;
+}
+.vehicle-dealer .action-group .btn {
+  margin: 10px 10px 0;
+}
+.vehicle-dealer .action-group button:hover,
+.vehicle-dealer .action-group button:focus {
+  background: #ebebeb;
+  border-bottom-color: #adadad;
+  color: #2e2f31;
 }
 .vehicle-reviews {
   border-top: 1px solid #eee;
