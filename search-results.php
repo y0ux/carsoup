@@ -1,70 +1,21 @@
           <!-- sorting -->
           <div class="page-sorting float-fix">
             <ul class="list-unstyled ordering-view hidden-xs row">
-              <li class="col-sm-5"><button class="btn btn-lg btn-default" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-filter"></span> Filter</button></li>
-              <li class="col-sm-5"><button class="btn btn-lg btn-default" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-sort"></span> Sort</button></li>
+              <li class="col-sm-5"><button class="btn btn-lg btn-default toggleSlide-trigger" data-slide-target="#st1"><span class="glyphicon glyphicon-filter"></span> Filter</button></li>
+              <li class="col-sm-5"><button class="btn btn-lg btn-default toggleSlide-trigger" data-slide-target="#st2"><span class="glyphicon glyphicon-sort"></span> Sort</button></li>
               <li class="col-sm-1"><button type="button" class="btn btn-lg btn-default view-button active" value="grid-view" title="Grid View" data-target="#search-results" data-view="search-view-grid"><span class="glyphicon glyphicon-th"></span></button></li>
               <li class="col-sm-1"><button type="button" class="btn btn-lg btn-default view-button" value="list-view" title="List View" data-target="#search-results" data-view="search-view-list"><span class="glyphicon glyphicon-th-list"></span></button></li>
             </ul>
             
-            <div class="collapse">
-              <h4 class="h6 pull-left">Sort by</h4>
-              <ul class="sorting-options list-inline pull-left hidden-xs text-center">
-                <li class="pull-left">
-                  <div class="sort-arrow">
-                    <button type="button" class="btn-xs btn-default sort-button active" value="updated-first" title="Highest"><span class="glyphicon glyphicon-chevron-up"></span></button>
-                    <button type="button" class="btn-xs btn-default sort-button" value="updated-last" title="Lowest"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                  </div>
-                  <p class="sort-label reset-margin-padding">Price</p>
-                </li>
-                <li class="pull-left">
-                  <div class="sort-arrow">
-                    <button type="button" class="btn-xs btn-default sort-button" value="highest-price" title="Highest"><span class="glyphicon glyphicon-chevron-up"></span></button>
-                    <button type="button" class="btn-xs btn-default sort-button" value="lowest-price" title="Lowest"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                  </div>
-                  <p class="sort-label reset-margin-padding">Year</p>
-                </li>
-                <li class="pull-left">
-                  <div class="sort-arrow">
-                    <button type="button" class="btn-xs btn-default sort-button" value="newst-first" title="Highest"><span class="glyphicon glyphicon-chevron-up"></span></button>
-                    <button type="button" class="btn-xs btn-default sort-button" value="oldest-first" title="Lowest"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                  </div>
-                  <p class="sort-label reset-margin-padding">Mileage</p>
-                </li>
-                <li class="pull-left">
-                  <div class="sort-arrow">
-                    <button type="button" class="btn-xs btn-default sort-button" value="featured-first" title="Highest"><span class="glyphicon glyphicon-chevron-up"></span></button>
-                    <button type="button" class="btn-xs btn-default sort-button" value="featured-last" title="Lowest"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                  </div>
-                  <p class="sort-label reset-margin-padding">Make/<br/>Model</p>
-                </li>
-                <li class="pull-left">
-                  <div class="sort-arrow">
-                    <button type="button" class="btn-xs btn-default sort-button" value="featured-first" title="Highest"><span class="glyphicon glyphicon-chevron-up"></span></button>
-                    <button type="button" class="btn-xs btn-default sort-button" value="featured-last" title="Lowest"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                  </div>
-                  <p class="sort-label reset-margin-padding">Color</p>
-                </li>
-                <li class="pull-left">
-                  <div class="sort-arrow">
-                    <button type="button" class="btn-xs btn-default sort-button" value="featured-first" title="Highest"><span class="glyphicon glyphicon-chevron-up"></span></button>
-                    <button type="button" class="btn-xs btn-default sort-button" value="featured-last" title="Lowest"><span class="glyphicon glyphicon-chevron-down"></span></button>
-                  </div>
-                  <p class="sort-label reset-margin-padding">Distance</p>
-                </li>
-              </ul>
+            <div class="filter-container">
+              <?php require_once('search-sort.php'); ?>
+              <?php require_once('search-filter.php'); ?>
             </div>
-            <div class="collapse">
-              <select class="form-control visible-xs sort-trigger">
-                <option data-value="updated-first" value="updated-first">Recently updated first</option>
-                <option data-value="updated-last" value="updated-last">Recently updated last</option>
-                <option data-value="higher-price" value="highest-price">Higher price</option>
-                <option data-value="lowes-price" value="lowest-price">Lowest price</option>
-                <option data-value="newst-first" value="newst-first">Newst year</option>
-                <option data-value="oldest-first" value="oldest-first">Oldest year</option>
-                <option data-value="featured-first" value="featured-first">Featured newst year</option>
-                <option data-value="featured-last" value="featured-last">Featured oldest year</option>
-              </select>
+            
+            <div class="action-group-mobile visible-xs">
+              <button class="btn col-xs-4 col-xxs-4" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-filter"></span> Filter</button>
+              <button class="btn col-xs-4 col-xxs-4" data-toggle="modal" data-target="#sortModal"><span class="glyphicon glyphicon-sort"></span> Sort</button>
+              <a class="btn col-xs-4 col-xxs-4" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
             </div>
           </div>
           

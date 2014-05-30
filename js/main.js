@@ -772,4 +772,28 @@ $(document).ready(function() {
       $('.mobile-list li a').append("<span class=\"mobile-list-chevron glyphicon glyphicon-chevron-right pull-right\"></span>");
     } 
   }
+  
+  /************************
+   * Generic slide toggle
+   ************************/
+  $('.toggleSlide-trigger').click (function(){
+    var trigger = $(this);
+    var target = $(this).data('slide-target');
+    var triggers = $(this).data('triggers');
+    if (target)
+      $(target).slideToggle('fast',function(){
+        if ($(this).is(':hidden')) {
+          trigger.removeClass('active');
+          if (triggers)
+            $(triggers).removeClass('active');
+        }
+        else {
+          trigger.addClass('active');
+          if (triggers)
+            $(triggers).addClass('active');
+          $(this).removeClass('collapse');
+        }
+      });
+  });
+  
 });

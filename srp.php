@@ -25,14 +25,9 @@ $zipCode = isset($_GET['zipCode']) && $_GET['zipCode']? ucwords($_GET['zipCode']
           </header>
           
           <?php require_once('modal-filter.php'); ?>
+          <?php require_once('modal-sort.php'); ?>
           
           <?php require_once('search-results.php'); ?>
-          
-          <div class="action-group-mobile visible-xs">
-            <button class="btn col-xs-4 col-xxs-4" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-filter"></span> Filter</button>
-            <button class="btn col-xs-4 col-xxs-4" data-toggle="modal" data-target="#filterModal"><span class="glyphicon glyphicon-sort"></span> Sort</button>
-            <a class="btn col-xs-4 col-xxs-4" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
-          </div>
         
         </section>
 

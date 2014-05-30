@@ -764,7 +764,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   padding-bottom: 0;
 }
 .page-sorting h4 {
-  color: #999;
   margin-right: 25px;
 }
 .page-sorting .ordering-view {
@@ -779,22 +778,57 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .page-sorting .ordering-view li:first-child .btn {
   margin-left: 0;
 }
+.page-sorting .sorting-box {
+  margin-top: 10px;
+  border: 1px solid #eee;
+  border-top-width: 0;
+  padding: 0;
+}
+.page-sorting .sorting-box .sorting-header {
+  color: #615f58;
+  background-color: #eee;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.page-sorting .sorting-box h4 {
+  padding-top: 5px;
+}
+.page-sorting .modal-header h4 span,
+.page-sorting .sorting-box h4 span {
+  font-size: .8em;
+}
+.page-sorting .sorting-box .form-content {
+  padding: 0 10px;
+}
+.page-sorting .sorting-box .filter-qty {
+  color: #e74c3c;
+  font-size: .9em;
+}
 .page-sorting .sorting-options {
-  margin-bottom: 0;
+  margin: 0;
+  vertical-align: top;
+  padding-bottom: 5px;
+}
+.page-sorting.modal-content .sorting-options li {
+  margin-bottom: 15px;
 }
 .page-sorting .sorting-options li {
+  display: inline-block;
   padding-left: 10px;
+  vertical-align: top;
 }
 .page-sorting .sorting-options select {
   max-width: 100%;
 }
 .top-pagination {
   border-bottom: 5px solid #f1f0ec;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .top-pagination .pagination {
   margin: 0 0;
   position: relative;
+  margin-top: -10px;
 }
 .top-pagination .pagination > li > a {
   margin-bottom: 5px;
@@ -822,23 +856,62 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   border-top: 5px solid #f1c40f;
   margin: 0;
 }
+#filterModal .modal-content,
+#sortModal .modal-content {
+  border-radius: 0;
+}
+#filterModal .modal-content .modal-header,
+#sortModal .modal-content .modal-header {
+  background-color: #eee;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border-width: 0;
+}
+#filterModal .modal-body {
+  padding: 10px;
+}
+#filterModal .modal-body .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+#filterModal .modal-body .col-xxs-6 {
+  padding: 0 10px;
+}
+.sorting-box .checkbox,
 #filterModal .checkbox {
   color: #8d8a82;
+  margin-top: 0;
 }
+.sorting-box .checkbox .checkbox-text,
 #filterModal .checkbox .checkbox-text {
   display: inline-block;
 }
-#filterModal .checkbox span.glyphicon {
-  visibility: hidden;
+.sorting-box .checkbox .checkbox-box,
+#filterModal .checkbox .checkbox-box {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #8d8a82;
+  display: inline-block;
 }
+.sorting-box .checkbox span.glyphicon,
+#filterModal .checkbox span.glyphicon {
+  display: none;
+}
+.sorting-box .checkbox input[type=checkbox],
 #filterModal .checkbox input[type=checkbox] {
   display: none;
 }
+.sorting-box .checkbox  input[type=checkbox]:checked + span.checkbox-text,
 #filterModal .checkbox  input[type=checkbox]:checked + span.checkbox-text {
   color: #f1c40f;
 }
+.sorting-box .checkbox  input[type=checkbox]:checked + span.checkbox-text span.checkbox-box,
+#filterModal .checkbox  input[type=checkbox]:checked + span.checkbox-text span.checkbox-box {
+  display: none;
+}
+.sorting-box .checkbox  input[type=checkbox]:checked + span.checkbox-text span.glyphicon,
 #filterModal .checkbox  input[type=checkbox]:checked + span.checkbox-text span.glyphicon {
-  visibility: visible;
+  display: inline;
 }
 #search-results article .article-header {
   color: #fff;
@@ -1628,24 +1701,24 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   #srp-page .action-group-mobile {
     background-color: #fff;
-    border-top: 1px solid #999;
+    border-top: 1px solid #ccc;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 1051;
+    z-index: 2;
   }
   #srp-page .action-group-mobile .btn {
     border-radius: 0;
     background-color: transparent;
-    color: #999;
+    color: #333;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-left: 1px solid #999;
+    border-left: 1px solid #ccc;
   }
   #srp-page .action-group-mobile .btn .glyphicon {
-    color: #333;
+    color: #f1c40f;
   }
   #srp-page .action-group-mobile .btn:focus,
   #srp-page .action-group-mobile .btn:hover,
@@ -1769,6 +1842,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   article img {
     width: 100%;
+  }
+  #filterModal .modal-body {
+    font-size: .9em;
   }
   #vdp-page .section-title .label-price {
     display: block;
@@ -2175,6 +2251,23 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+}
+@media (min-width: 1600px) {
+  .col-xl-6 {
+    width: 50%;
+  }
+  .page-sorting {
+    position: relative;
+    overflow: visible;
+  }
+  .page-sorting .filter-container {
+    
+    width: 220px;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    font-size: .9em;
   }
 }
 
