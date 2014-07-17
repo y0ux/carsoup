@@ -249,12 +249,12 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
       product_title: 'Sign Up For Price Alerts',
       product_subtitle: '2009 California Scooter Co. CRF100F AH4K',
       css_override: '\
-#TIF_VALANCE_WRAPPER.cleanslate {top: 90px !important; background-color: #f1c40f !important; z-index: 1029 !important; border-bottom: 1px solid #2e2f31; }\n\
+#TIF_VALANCE_WRAPPER.cleanslate {position: static !important; background-color: #bebaaf !important; border-bottom: 1px solid #2e2f31; }\n\
 #TIF_VALANCE_SUBTITLE { margin-top: 5px !important; color: #fff !important; }\n\
 #TIF_VALANCE_SUBMIT { overflow: visible; text-transform: none; border: 0; background: #e74c3c; color: #fff; padding: 6px 12px; border-bottom: 3px solid #c0392b; opacity: 1 !important; border-radius: 4px; }\n\
 #TIF_VALANCE_EMAIL_TEXT { border: 1px solid #ccc !important; background: #fff !important; padding: 6px 12px !important; color: #555 !important; border-radius: 4px !important; text-align: left !important; }\n\
 #TIF_VALANCE_HIDE {font-family: "Glyphicons Halflings" !important; display: inline-block !important; position: relative !important; color: #555 !important; font-size: 1.3em !important;}\n\
-#TIF_VALANCE_HIDE:before {content: "\\e014"; position: absolute; display: inline-block; top: 0; bottom: 0; left: 0; right: 0; background: #f1c40f; }\n\
+#TIF_VALANCE_HIDE:before {content: "\\e014"; position: absolute; display: inline-block; top: 0; bottom: 0; left: 0; right: 0; background: #bebaaf; }\n\
 #TIF_VALANCE_HIDE:hover { text-decoration: none !important; color: #fff !important; } '
     };
 
