@@ -241,21 +241,40 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
     valance_options = {
       client: 'cyclesoup',
       remember_email: 'session',
-      enable_hiding: true,
+      enable_hiding: false,
+      allow_minimize: true,
       delay: 1000,
       company_logo: '<?php echo "http://$_SERVER[HTTP_HOST]" ?>/img/cyclesoup-logo-black-vertical.png',
       product_image: '<?php echo "http://$_SERVER[HTTP_HOST]" ?>/img/vdp/image1.jpg',
-      //submit_image: '<?php echo "http://$_SERVER[HTTP_HOST]" ?>/img/vdp/image1.jpg',
+      //submit_image: '',
       product_title: 'Sign Up For Price Alerts',
       product_subtitle: '2009 California Scooter Co. CRF100F AH4K',
       css_override: '\
-#TIF_VALANCE_WRAPPER.cleanslate {position: static !important; background-color: #bebaaf !important; border-bottom: 1px solid #2e2f31; }\n\
-#TIF_VALANCE_SUBTITLE { margin-top: 5px !important; color: #fff !important; }\n\
+body { margin-top: 0 !important; } \n\
+#TIF_VALANCE_WRAPPER { position: static !important; background-color: #bebaaf !important; }\n\
+#TIF_VALANCE_WRAPPER.TIF_valance_height_small { background-color: #fff !important; overflow: visible !important; } \n\
+#TIF_VALANCE { width: 100% !important; margin: 0 auto !important; }\n\
+#TIF_VALANCE_SUBTITLE { margin-top: 5px !important; color: #fff !important; font-size: 16px !important; }\n\
 #TIF_VALANCE_SUBMIT { overflow: visible; text-transform: none; border: 0; background: #e74c3c; color: #fff; padding: 6px 12px; border-bottom: 3px solid #c0392b; opacity: 1 !important; border-radius: 4px; }\n\
-#TIF_VALANCE_EMAIL_TEXT { border: 1px solid #ccc !important; background: #fff !important; padding: 6px 12px !important; color: #555 !important; border-radius: 4px !important; text-align: left !important; }\n\
-#TIF_VALANCE_HIDE {font-family: "Glyphicons Halflings" !important; display: inline-block !important; position: relative !important; color: #555 !important; font-size: 1.3em !important;}\n\
-#TIF_VALANCE_HIDE:before {content: "\\e014"; position: absolute; display: inline-block; top: 0; bottom: 0; left: 0; right: 0; background: #bebaaf; }\n\
-#TIF_VALANCE_HIDE:hover { text-decoration: none !important; color: #fff !important; } '
+#TIF_VALANCE_EMAIL_TEXT { border: 1px solid #ccc !important; background: #fff !important; padding: 6px 12px !important; color: #555 !important; border-radius: 4px !important; text-align: left !important; font-size: 16px !important; }\n\
+#TIF_VALANCE_HEADER { height: auto !important; position: relative !important; } \n\
+#TIF_VALANCE_HIDE { font-family: "Glyphicons Halflings" !important; display: inline-block !important; position: absolute !important; left: auto !important; right: 0 !important;  color: #555 !important; font-size: 20px !important; line-height: 22px !important; text-align: center !important; padding: 0px 8px 16px !important; }\n\
+#TIF_VALANCE_HIDE:before {content: "\\e014"; position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: #bebaaf; padding-top: 8px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }\n\
+#TIF_VALANCE_HIDE:hover { text-decoration: none !important; color: #fff !important; }\n\
+#TIF_VALANCE_WRAPPER.TIF_valance_height_small #TIF_VALANCE_HIDE { color: #ad1000 !important; } \n\
+#TIF_VALANCE_WRAPPER.TIF_valance_height_small #TIF_VALANCE_HIDE:before { background: #e74c3c !important; } \n\
+#TIF_VALANCE_WRAPPER.TIF_valance_height_small #TIF_VALANCE_HIDE:hover { color: #fff !important; } \n\
+@media (min-width: 768px) { #TIF_VALANCE { width: 750px !important; } }\n\
+@media (min-width: 992px) { #TIF_VALANCE { width: 970px !important; } }\n\
+@media (min-width: 1200px) { #TIF_VALANCE { width: 1170px !important; } }\n\
+@media (max-width: 767px) {\n\
+#TIF_VALANCE_ELEMENTS { display: block !important; }\n\
+#TIF_VALANCE_ELEMENTS tr { display: block !important; }\n\
+#TIF_VALANCE_ELEMENTS td  { display: inline-block !important; }\n\
+#TIF_VALANCE_COMPANY_LOGO { display: none !important; } \n\
+#TIF_VALANCE_WRAPPER.TIF_valance_height_small #TIF_VALANCE_ELEMENTS td  { display: none !important; } \n\
+}\n\
+ '
     };
 
     var d = document, j = d.createElement('script'); j.type = 'text/javascript'; j.async = true;
