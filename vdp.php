@@ -262,7 +262,7 @@ body { margin-top: 0 !important; } \n\
 #TIF_VALANCE_HIDE:before {content: "\\e014"; position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: #bebaaf; padding-top: 8px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }\n\
 #TIF_VALANCE_HIDE:hover { text-decoration: none !important; color: #fff !important; }\n\
 #TIF_VALANCE_WRAPPER.TIF_valance_height_small #TIF_VALANCE_HIDE { color: #ad1000 !important; } \n\
-#TIF_VALANCE_WRAPPER.TIF_valance_height_small #TIF_VALANCE_HIDE:before { background: #e74c3c !important; } \n\
+#TIF_VALANCE_WRAPPER.TIF_valance_height_small #TIF_VALANCE_HIDE:before {content: "\\e114"; background: #e74c3c !important; } \n\
 #TIF_VALANCE_WRAPPER.TIF_valance_height_small #TIF_VALANCE_HIDE:hover { color: #fff !important; } \n\
 @media (min-width: 768px) { #TIF_VALANCE { width: 750px !important; } }\n\
 @media (min-width: 992px) { #TIF_VALANCE { width: 970px !important; } }\n\
