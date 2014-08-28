@@ -239,16 +239,17 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <script type="text/javascript">
   (function() {
     valance_options = {
-      client: 'cyclesoup',
+      client: 'cyclesoup', // don't change this
       remember_email: 'session',
       enable_hiding: false,
       allow_minimize: true,
       delay: 1000,
-      company_logo: '<?php echo "http://$_SERVER[HTTP_HOST]" ?>/img/cyclesoup-logo-black-vertical.png',
-      product_image: '<?php echo "http://$_SERVER[HTTP_HOST]" ?>/img/vdp/image1.jpg',
-      //submit_image: '',
+      company_logo: '<?php echo "http://$_SERVER[HTTP_HOST]" ?>/img/cyclesoup-logo-black-vertical.png', // it will be resize via CSS
+      product_image: '<?php echo "http://$_SERVER[HTTP_HOST]" ?>/img/vdp/image1.jpg', // it will be resize via CSS
+      //submit_image: '', // image used for the submit button, we used CSS instead
       product_title: 'Sign Up For Price Alerts',
-      product_subtitle: '2009 California Scooter Co. CRF100F AH4K',
+      product_subtitle: '2009 California Scooter Co. CRF100F AH4K', // change this to the current motorcycle
+      // inverse diagonal and \n\ are inserted for clarity,
       css_override: '\
 body { margin-top: 0 !important; } \n\
 #TIF_VALANCE_WRAPPER { position: static !important; background-color: #bebaaf !important; }\n\
