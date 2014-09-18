@@ -5,7 +5,8 @@
           <!-- header -->
           <header class="article-header">
             <h1 class="section-title">2009 California Scooter Co. <span class="label label-price pull-right"><span></span> $3,400</span></h1>
-            <div class="h3 col-lg-6 col-md-6 col-sm-6 col-xs-12 reset-margin-padding subtitle">CRF100F AH4K</div>
+            <div class="h3 col-lg-6 col-md-6 col-sm-6 col-xs-12 reset-margin-padding subtitle">CRF100F AH4K </div>
+            <a href="pull-right">Update me</a>
           </header>
           
           <div class="vehicle-options float-fix">
@@ -237,7 +238,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <?php require_once('footer.php'); ?>
 
 <script type="text/javascript">
-  (function() {
+  /*(function() {
     valance_options = {
       client: 'cyclesoup', // don't change this
       remember_email: 'session',
@@ -281,5 +282,55 @@ body { margin-top: 0 !important; } \n\
     var d = document, j = d.createElement('script'); j.type = 'text/javascript'; j.async = true;
     j.src = 'https://cyclesoup.trackif.com/assets/v.js?'; var s = d.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(j, s);
-  })();
+  })(); */
+  
+
+
+(function() {
+  modal_options = {
+    client: 'cyclesoup',
+    remember_email: 'session',
+    enable_hiding: true,
+    delay: 2000,
+    company_logo: '<?php echo "http://$_SERVER[HTTP_HOST]".dirname($_SERVER['PHP_SELF']); ?>/img/cyclesoup-logo-black-vertical.png',
+    product_image: '<?php echo "http://$_SERVER[HTTP_HOST]".dirname($_SERVER['PHP_SELF']); ?>/img/vdp/image1.jpg',
+    submit_image: '',
+    product_title: 'Sign Up For Price Alerts',
+    product_subtitle: '2009 California Scooter Co. CRF100F AH4K',
+    css_override: '\
+#TIF_OVERLAY_WRAPPER {background-color: rgba(0,0,0,.6) !important; }\n\
+#TIF_OVERLAY { border-radius: 0 !important; height: auto !important; }\n\
+#TIF_OVERLAY_PRODUCT_IMAGE {max-width: 100% !important; }\n\
+#TIF_OVERLAY_ELEMENTS, #TIF_OVERLAY_ELEMENTS tr{ display: block !important; }\n\
+#TIF_OVERLAY_ELEMENTS tr {position: relative !important;}\n\
+#TIF_OVERLAY_ELEMENTS td.cleanslate {display: inline-block !important; width: 40% !important; padding: 0 !important; margin: 0 !important; vertical-align: middle !important;}\n\
+#TIF_OVERLAY_ELEMENTS td.cleanslate:first-child {width: 60% !important; padding-top: 0 !important;} \n\
+#TIF_OVERLAY_ELEMENTS td.cleanslate > div {padding: 10px !important;}\n\
+#TIF_OVERLAY_COMPANY_LOGO { margin-bottom: 15px !important; }\n\
+#TIF_OVERLAY_ELEMENTS br {display: none !important;}\n\
+#TIF_OVERLAY_TITLES { color: #333 !important; }\n\
+#TIF_OVERLAY_TITLES h1 { line-height: 1.5em !important; }\n\
+#TIF_OVERLAY_TITLES h3 { color: #999 !important; }\n\
+#TIF_OVERLAY_PRODUCT_IMAGE {margin-top: -15px !important;}\n\
+#TIF_OVERLAY_EMAIL_TEXT { width: 90% !important; display: inline-block !important; border: 1px solid #ccc !important; background: #fff !important; padding: 6px 12px !important; margin-bottom: 10px !important; color: #555 !important; border-radius: 4px !important; text-align: left !important; font-size: 16px !important; }\n\
+#TIF_OVERLAY_SUBMIT { width: 90% !important; display: inline-block !important;  overflow: visible; text-transform: none; border: 0; background: #e74c3c; color: #fff; padding: 6px 12px; border-bottom: 3px solid #c0392b; opacity: 1 !important; border-radius: 4px; }\n\
+#TIF_OVERLAY_HIDE {width: 30px !important; height: 20px !important; position: absolute !important; top: 0 !important; right: 0 !important; overflow: hidden !important; font-family: "Glyphicons Halflings" !important; display: inline-block !important; color: #555 !important; font-size: 20px !important; line-height: 22px !important; text-align: center !important; padding: 0px 8px 16px !important; }\n\
+#TIF_OVERLAY_HIDE:hover { text-decoration: none !important; color: #fff !important;}\n\
+#TIF_OVERLAY_HIDE:before {content: "\\e014"; position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: #bebaaf; padding-top: 8px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }\n\
+@media (max-width: 767px) {\n\
+  #TIF_OVERLAY_COMPANY_LOGO {display: inline-block !important; max-width: 50% !important;}\n\
+  #TIF_OVERLAY_TITLES h1 { font-size: 1em !important; }\n\
+  #TIF_OVERLAY_TITLES h3 { font-size: .8em !important; }\n\
+  #TIF_OVERLAY_ELEMENTS td.cleanslate {float none; width: auto !important; padding: 10px !important;}\n\
+  #TIF_OVERLAY_ELEMENTS td.cleanslate > div {padding: 0 !important;}\n\
+  #TIF_OVERLAY_EMAIL_TEXT { border-radius: 4px !important; width: 100% !important;  } \n\
+  #TIF_OVERLAY_SUBMIT {  border-radius: 4px !important; width: 100% !important; } \n\
+}\n\
+'
+  };
+ 
+  var d = document, j = d.createElement('script'); j.type = 'text/javascript'; j.async = true;
+  j.src = 'https://cyclesoup.trackif.com/assets/o.js?'; var s = d.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(j, s);
+})();
 </script>
