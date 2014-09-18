@@ -1,11 +1,11 @@
           <!-- sorting -->
           <div class="page-sorting float-fix">
-            <ul class="list-unstyled ordering-view hidden-xs row">
+            <!--ul class="list-unstyled ordering-view hidden-xs row">
               <li class="col-sm-5"><button class="btn btn-lg btn-default toggleSlide-trigger" data-slide-target="#st1"><span class="glyphicon glyphicon-filter"></span> Filter</button></li>
               <li class="col-sm-5"><button class="btn btn-lg btn-default toggleSlide-trigger" data-slide-target="#st2"><span class="glyphicon glyphicon-sort"></span> Sort</button></li>
               <li class="col-sm-1"><button type="button" class="btn btn-lg btn-default view-button active" value="grid-view" title="Grid View" data-target="#search-results" data-view="search-view-grid"><span class="glyphicon glyphicon-th"></span></button></li>
               <li class="col-sm-1"><button type="button" class="btn btn-lg btn-default view-button" value="list-view" title="List View" data-target="#search-results" data-view="search-view-list"><span class="glyphicon glyphicon-th-list"></span></button></li>
-            </ul>
+            </ul-->
             
             <div class="filter-container">
               <?php require_once('search-sort.php'); ?>

@@ -756,8 +756,21 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 #srp-page .page-header {
   margin: 0 0 10px ;
 }
+#srp-page .action-group {
+  margin-top: 20px;
+}
+#srp-page .btn-default {
+  color: #ccc;
+  background: #777;
+}
 #srp-page .search-button {
   color: #333;
+  background: #d4d3d1;
+}
+.featured-dealer {
+  background: #eee;
+  padding: 10px;
+  margin: 0 -15px;
 }
 .page-sorting {
   margin-top: 10px;
@@ -913,17 +926,21 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 #filterModal .checkbox  input[type=checkbox]:checked + span.checkbox-text span.glyphicon {
   display: inline;
 }
+.result-container article .article-header,
 #search-results article .article-header {
   color: #fff;
   background: #2e2f31;
   padding: 5px 5px;
 }
+.result-container article,
 #search-results article {
   position: relative;
 }
+.result-container .article-header h3,
 #search-results .article-header h3 {
   margin: 0;
 }
+.result-container .article-header h3 span,
 #search-results .article-header h3 span {
   color: #d4d3d1;
 }
