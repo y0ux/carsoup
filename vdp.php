@@ -6,7 +6,7 @@
           <header class="article-header">
             <h1 class="section-title">2009 California Scooter Co. <span class="label label-price pull-right"><span></span> $3,400</span></h1>
             <div class="h3 col-lg-6 col-md-6 col-sm-6 col-xs-12 reset-margin-padding subtitle">CRF100F AH4K </div>
-            <a href="pull-right">Update me</a>
+            <!--a href="pull-right">Update me</a-->
           </header>
           
           <div class="vehicle-options float-fix">
