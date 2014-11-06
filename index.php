@@ -24,14 +24,14 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="BasicSearch_model">Model <span>(Optional)</span></label>
+                    <label for="BasicSearch_model">Model <span class="optionalLabel">(Optional)</span></label>
                     <select class="form-control" id="BasicSearch_model" name="model">
                       <option value="">Select a Make first</option>
                     </select>
                   </div>
                   
                   <div class="form-group">
-                    <label for="BasicSearch_priceRange">Price Range <span>(Optional)</span></label>
+                    <label for="BasicSearch_priceRange">Price Range <span class="optionalLabel">(Optional)</span></label>
                     <div class="row">
                       <div class="col-sm-5">
                         <select class="form-control" id="BasicSearch_priceRange" name="priceMin">
@@ -63,7 +63,7 @@
                   </div>
                   
                   <div class="form-group">
-                    <label for="BasicSearch_yearRange">Year Range <span>(Optional)</span></label>
+                    <label for="BasicSearch_yearRange">Year Range <span class="optionalLabel">(Optional)</span></label>
                     <div class="row">
                       <div class="col-sm-5">
                         <select class="form-control" id="BasicSearch_priceRange" name="yearMin">

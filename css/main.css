@@ -391,6 +391,10 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .basic-search input {
   font-weight: normal;
 }
+
+.basic-search label .optionalLabel {
+  color: #888;
+}
 .basic-search .currentMaxPriceValue {
   color: #f1c40f;
 }
