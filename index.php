@@ -11,7 +11,7 @@
           <div class="tab-content">          
             <form id="basic-search" class="basic-search tab-pane active" action="srp.php" method="get">
               <div class="row">
-                <div class="col-lg-6 col-md-5">
+                <div class="col-md-5">
                   <div class="form-group">
                     <label for="BasicSearch_make">Make</label>
                     <select class="form-control" id="BasicSearch_make" name="make">
@@ -33,30 +33,39 @@
                   <div class="form-group">
                     <label for="BasicSearch_priceRange">Price Range <span class="optionalLabel">(Optional)</span></label>
                     <div class="row">
-                      <div class="col-sm-5">
+                      <div class="col-sm-6">
+                        <div class="rangeText">From</div>
                         <select class="form-control" id="BasicSearch_priceRange" name="priceMin">
-                          <option value="">No Limit</option>
-                          <option value="5000">$100</option>
-                          <option value="10000">$1,000</option>
-                          <option value="20000">$5,000</option>
-                          <option value="30000">$10,000</option>
-                          <option value="40000">$20,000</option>
-                          <option value="unlimited">$45,000</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-2 hidden-xs text-center">
-                        <span>To</span>
-                      </div>
-                      <br class="visible-xs">
-                      <div class="col-sm-5">
-                        <select class="form-control" id="BasicSearch_priceRangeMax" name="priceMax">
-                          <option value="">No Limit</option>
+                          <option value="">Any</option>
+                          <option value="1000">$1,000</option>
+                          <option value="2500">$2,500</option>
                           <option value="5000">$5,000</option>
+                          <option value="7500">$7,500</option>
                           <option value="10000">$10,000</option>
+                          <option value="15000">$15,000</option>
                           <option value="20000">$20,000</option>
+                          <option value="25000">$25,000</option>
                           <option value="30000">$30,000</option>
                           <option value="40000">$40,000</option>
-                          <option value="unlimited">$50,000+</option>
+                          <option value="50000">$50,000</option>
+                        </select>
+                      </div>
+                      <br class="visible-xs">                      
+                      <div class="col-sm-6">
+                        <div class="rangeText">To</div>
+                        <select class="form-control" id="BasicSearch_priceRangeMax" name="priceMax">
+                          <option value="">Any</option>
+                          <option value="1000">$1,000</option>
+                          <option value="2500">$2,500</option>
+                          <option value="5000">$5,000</option>
+                          <option value="7500">$7,500</option>
+                          <option value="10000">$10,000</option>
+                          <option value="15000">$15,000</option>
+                          <option value="20000">$20,000</option>
+                          <option value="25000">$25,000</option>
+                          <option value="30000">$30,000</option>
+                          <option value="40000">$40,000</option>
+                          <option value="50000">$50,000</option>
                         </select>
                       </div>
                     </div>
@@ -65,40 +74,35 @@
                   <div class="form-group">
                     <label for="BasicSearch_yearRange">Year Range <span class="optionalLabel">(Optional)</span></label>
                     <div class="row">
-                      <div class="col-sm-5">
+                      <div class="col-sm-6">
+                        <div class="rangeText">From</div>
                         <select class="form-control" id="BasicSearch_priceRange" name="yearMin">
                           <option value="">Any</option>
-                          <option value="5000">$100</option>
-                          <option value="10000">$1,000</option>
-                          <option value="20000">$5,000</option>
-                          <option value="30000">$10,000</option>
-                          <option value="40000">$20,000</option>
-                          <option value="unlimited">$45,000</option>
+                          <option value="2014">2014 (current year)</option>
+                          <?php for ($i = 2013; $i > 1949; $i-- ) : ?>
+                          <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                          <?php endfor; ?>
                         </select>
                       </div>
-                      <div class="col-sm-2 hidden-xs text-center">
-                        <span>To</span>
-                      </div>
                       <br class="visible-xs">
-                      <div class="col-sm-5">
+                      <div class="col-sm-6">
+                        <div class="rangeText">To</div>
                         <select class="form-control" id="BasicSearch_priceRangeMax" name="yearMax">
                           <option value="">Any</option>
-                          <option value="5000">$5,000</option>
-                          <option value="10000">$10,000</option>
-                          <option value="20000">$20,000</option>
-                          <option value="30000">$30,000</option>
-                          <option value="40000">$40,000</option>
-                          <option value="unlimited">$50,000+</option>
+                          <option value="2014">2014 (current year)</option>
+                          <?php for ($i = 2013; $i > 1949; $i-- ) : ?>
+                          <option value="<?php echo $i ?>"><?php echo $i ?></option>
+                          <?php endfor; ?>
                         </select>
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                <div class="col-lg-6 col-md-7">
+                <div class="col-md-7">
                   <div class="form-group col-lg-12 radio-grid">
                     <label>Select Type</label>
-                    <div style="margin-bottom: 30px" class="hidden-sm"></div>
+
                     <div class="row">
                       <div class="radio col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <label class="optionsRadios" for="BasicSearch_optionsRadios1">
@@ -184,7 +188,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group col-sm-9" style="margin-bottom: 0;">
+                  <div class="form-group col-sm-12" style="margin-bottom: 0;">
                     <label for="BasicSearch_zipCode">Search Near</label>
                     <div class="row">
                       <div class="col-sm-6">
@@ -209,8 +213,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group col-sm-3 submit-group">
-                    <button type="submit" class="btn btn-callOA">Go</button>
+                  <div class="form-group col-sm-12 submit-group">
+                    <button type="submit" class="btn btn-callOA btn-lg">Go</button>
                   </div>
                   
                 </div>

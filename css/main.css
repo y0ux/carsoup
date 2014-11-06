@@ -391,9 +391,12 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .basic-search input {
   font-weight: normal;
 }
-
 .basic-search label .optionalLabel {
   color: #888;
+}
+.basic-search .rangeText {
+  color: #ccc;
+  font-size: .8em;
 }
 .basic-search .currentMaxPriceValue {
   color: #f1c40f;
@@ -468,10 +471,11 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   display: block;
 }
 .submit-group{
-  padding-top: 25px;
+  padding-top: 5px;
 }
 .basic-search .submit-group button{
   width: 100%;
+  font-weight: bold;
 }
 #search-criteria .tab-header {
   border-bottom: 1px solid #797b7f;
