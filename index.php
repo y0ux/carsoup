@@ -24,35 +24,81 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="BasicSearch_model">Model</label>
+                    <label for="BasicSearch_model">Model <span>(Optional)</span></label>
                     <select class="form-control" id="BasicSearch_model" name="model">
                       <option value="">Select a Make first</option>
                     </select>
                   </div>
-                  <div class="form-group price-group">
+                  
+                  <div class="form-group">
+                    <label for="BasicSearch_priceRange">Price Range <span>(Optional)</span></label>
                     <div class="row">
-                      <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <label for="BasicSearch_maxPrice">Max Price</label>
+                      <div class="col-sm-5">
+                        <select class="form-control" id="BasicSearch_priceRange" name="priceMin">
+                          <option value="">No Limit</option>
+                          <option value="5000">$100</option>
+                          <option value="10000">$1,000</option>
+                          <option value="20000">$5,000</option>
+                          <option value="30000">$10,000</option>
+                          <option value="40000">$20,000</option>
+                          <option value="unlimited">$45,000</option>
+                        </select>
                       </div>
-                      <p class="col-lg-4 col-md-4 col-sm-4 col-xs-6 currentMaxPriceValue">$<span class="maxPriceValue">1,000</span></p>
-                      <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                        <div class="checkbox text-right">
-                          <label class="small-form-text" for="BasicSearch_anyPrice">
-                            <input id="BasicSearch_anyPrice" name="anyPrice" type="checkbox"> Any Price
-                          </label>
-                        </div>
+                      <div class="col-sm-2 hidden-xs text-center">
+                        <span>To</span>
+                      </div>
+                      <br class="visible-xs">
+                      <div class="col-sm-5">
+                        <select class="form-control" id="BasicSearch_priceRangeMax" name="priceMax">
+                          <option value="">No Limit</option>
+                          <option value="5000">$5,000</option>
+                          <option value="10000">$10,000</option>
+                          <option value="20000">$20,000</option>
+                          <option value="30000">$30,000</option>
+                          <option value="40000">$40,000</option>
+                          <option value="unlimited">$50,000+</option>
+                        </select>
                       </div>
                     </div>
-                    <input id="BasicSearch_maxPrice" name="maxPrice" class="generic-slider span2" value="" data-slider-id='inputMaxPrice' type="text" data-slider-min="1000" data-slider-max="500000" data-slider-step="1000" data-slider-destiny=".maxPriceValue" data-slider-value="1000"/>
-                    <div class="form-group small-form-text">
-                      <span class="slider-limit slider-min">$1,000</span>
-                      <span class="slider-limit slider-max">$500,000</span>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="BasicSearch_yearRange">Year Range <span>(Optional)</span></label>
+                    <div class="row">
+                      <div class="col-sm-5">
+                        <select class="form-control" id="BasicSearch_priceRange" name="yearMin">
+                          <option value="">Any</option>
+                          <option value="5000">$100</option>
+                          <option value="10000">$1,000</option>
+                          <option value="20000">$5,000</option>
+                          <option value="30000">$10,000</option>
+                          <option value="40000">$20,000</option>
+                          <option value="unlimited">$45,000</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-2 hidden-xs text-center">
+                        <span>To</span>
+                      </div>
+                      <br class="visible-xs">
+                      <div class="col-sm-5">
+                        <select class="form-control" id="BasicSearch_priceRangeMax" name="yearMax">
+                          <option value="">Any</option>
+                          <option value="5000">$5,000</option>
+                          <option value="10000">$10,000</option>
+                          <option value="20000">$20,000</option>
+                          <option value="30000">$30,000</option>
+                          <option value="40000">$40,000</option>
+                          <option value="unlimited">$50,000+</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </div>
+                
                 <div class="col-lg-6 col-md-7">
                   <div class="form-group col-lg-12 radio-grid">
-                    <label >Select Type</label>
+                    <label>Select Type</label>
+                    <div style="margin-bottom: 30px" class="hidden-sm"></div>
                     <div class="row">
                       <div class="radio col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <label class="optionsRadios" for="BasicSearch_optionsRadios1">
@@ -138,16 +184,35 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group col-lg-9 col-md-8 col-sm-9">
+                  <div class="form-group col-sm-9" style="margin-bottom: 0;">
                     <label for="BasicSearch_zipCode">Search Near</label>
-                    <div class="input-group">
-                      <input type="text" class="form-control" id="BasicSearch_zipCode" name="zipCode" placeholder="Enter your zip code"/>
-                      <span class="input-group-addon geolocator-trigger" data-target="#zipCode"><span class="glyphicon icon-location"></span></span>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="BasicSearch_zipCode" name="zipCode" placeholder="Zip code"/>
+                          <span class="input-group-addon geolocator-trigger" data-target="#zipCode"><span class="glyphicon icon-location"></span></span>
+                        </div>
+                      </div>
+                      <br class="visible-xs">
+                      <div class="col-sm-6">
+                        <div class="form-group ">
+                          <select class="form-control" id="BasicSearch_priceRangeMax" name="yearMax">
+                            <option value="10">Within 10 miles</option>
+                            <option value="25">Within 25 miles</option>
+                            <option value="50">Within 50 miles</option>
+                            <option value="100" selected>Within 100 miles</option>
+                            <option value="200">Within 200 miles</option>
+                            <option value="400">Within 400 miles</option>
+                            <option value="nation">Nationwide</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-group col-lg-3 col-md-4 col-sm-3 submit-group">
-                    <button type="submit" class="btn btn-callOA btn-lg">Go</button>
+                  <div class="form-group col-sm-3 submit-group">
+                    <button type="submit" class="btn btn-callOA">Go</button>
                   </div>
+                  
                 </div>
               </div>
             </form>
