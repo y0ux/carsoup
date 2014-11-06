@@ -2229,6 +2229,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   #research.launch-soon {
     margin-top: 150px;
   }
+  .submit-group{
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1200px) {
   #dealer-search-manufacturer form button {

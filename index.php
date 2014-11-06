@@ -99,7 +99,7 @@
                   </div>
                 </div>
                 
-                <div class="col-md-7">
+                <div class="col-md-7 search-right">
                   <div class="form-group col-lg-12 radio-grid">
                     <label>Select Type</label>
 
@@ -188,7 +188,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group col-sm-12" style="margin-bottom: 0;">
+                  <div class="form-group col-sm-12">
                     <label for="BasicSearch_zipCode">Search Near</label>
                     <div class="row">
                       <div class="col-sm-6">
@@ -197,9 +197,8 @@
                           <span class="input-group-addon geolocator-trigger" data-target="#zipCode"><span class="glyphicon icon-location"></span></span>
                         </div>
                       </div>
-                      <br class="visible-xs">
                       <div class="col-sm-6">
-                        <div class="form-group ">
+                        <div class="form-group" style="margin-bottom: 0;">
                           <select class="form-control" id="BasicSearch_priceRangeMax" name="yearMax">
                             <option value="10">Within 10 miles</option>
                             <option value="25">Within 25 miles</option>
