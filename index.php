@@ -214,7 +214,7 @@
                     </div>
                   </div>
                   <div class="form-group col-sm-12 submit-group">
-                    <button type="submit" class="btn btn-callOA btn-lg">Go</button>
+                    <button type="submit" class="btn btn-callOA btn-lg">Search</button>
                   </div>
                   
                 </div>
