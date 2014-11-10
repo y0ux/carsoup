@@ -287,6 +287,35 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   color: #e74c3c;
   content: '* ';
 }
+.modal-header .close {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  opacity: 1;
+  margin-top: -8px;
+}
+.modal-header .close:after {
+  content: "\e014";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 46px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.modal-header .close:hover:after {
+  background: #e74c3c;
+}
 /* ==========================================================================
    Header
    ========================================================================== */

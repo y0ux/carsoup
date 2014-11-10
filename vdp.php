@@ -299,7 +299,7 @@ body { margin-top: 0 !important; } \n\
     product_subtitle: '2009 California Scooter Co. CRF100F AH4K',
     css_override: '\
 #TIF_OVERLAY_WRAPPER {background-color: rgba(0,0,0,.6) !important; }\n\
-#TIF_OVERLAY { border-radius: 0 !important; height: auto !important; }\n\
+#TIF_OVERLAY { border-radius: 6px !important; height: auto !important; }\n\
 #TIF_OVERLAY_PRODUCT_IMAGE {max-width: 100% !important; }\n\
 #TIF_OVERLAY_ELEMENTS, #TIF_OVERLAY_ELEMENTS tr{ display: block !important; }\n\
 #TIF_OVERLAY_ELEMENTS tr {position: relative !important;}\n\
@@ -314,9 +314,10 @@ body { margin-top: 0 !important; } \n\
 #TIF_OVERLAY_PRODUCT_IMAGE {margin-top: -15px !important;}\n\
 #TIF_OVERLAY_EMAIL_TEXT { width: 90% !important; display: inline-block !important; border: 1px solid #ccc !important; background: #fff !important; padding: 6px 12px !important; margin-bottom: 10px !important; color: #555 !important; border-radius: 4px !important; text-align: left !important; font-size: 16px !important; }\n\
 #TIF_OVERLAY_SUBMIT { width: 90% !important; display: inline-block !important;  overflow: visible; text-transform: none; border: 0; background: #e74c3c; color: #fff; padding: 6px 12px; border-bottom: 3px solid #c0392b; opacity: 1 !important; border-radius: 4px; }\n\
-#TIF_OVERLAY_HIDE {width: 30px !important; height: 20px !important; position: absolute !important; top: 0 !important; right: 0 !important; overflow: hidden !important; font-family: "Glyphicons Halflings" !important; display: inline-block !important; color: #555 !important; font-size: 20px !important; line-height: 22px !important; text-align: center !important; padding: 0px 8px 16px !important; }\n\
-#TIF_OVERLAY_HIDE:hover { text-decoration: none !important; color: #fff !important;}\n\
-#TIF_OVERLAY_HIDE:before {content: "\\e014"; position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: #bebaaf; padding-top: 8px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }\n\
+#TIF_OVERLAY_HIDE {width: 30px !important; height: 30px !important; position: absolute !important; top: 5px !important; right: 5px !important; overflow: hidden !important; font-family: "Glyphicons Halflings" !important; display: inline-block !important; color: #fff !important; font-size: 20px !important; line-height: 30px !important; text-align: center !important; padding: 0px 8px 16px !important; }\n\
+#TIF_OVERLAY_HIDE:hover { text-decoration: none !important; }\n\
+#TIF_OVERLAY_HIDE:before {content: "\\e014"; position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: #000; padding-top: 8px; border-radius: 50%; }\n\
+#TIF_OVERLAY_HIDE:hover:before { background: #e74c3c !important; }\n\
 @media (max-width: 767px) {\n\
   #TIF_OVERLAY_COMPANY_LOGO {display: inline-block !important; max-width: 50% !important;}\n\
   #TIF_OVERLAY_TITLES h1 { font-size: 1em !important; }\n\
