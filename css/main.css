@@ -289,8 +289,8 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 }
 .modal-header .close {
   position: relative;
-  width: 46px;
-  height: 46px;
+  width: 36px;
+  height: 36px;
   opacity: 1;
   margin-top: -8px;
 }
@@ -308,8 +308,8 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   font-family: 'Glyphicons Halflings';
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 46px;
+  font-size: 16px;
+  line-height: 36px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
