@@ -405,6 +405,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .sibling-sites > li > button:focus,
 .sibling-sites > li > button:focus .glyphicon {
   color: #999;
+  background: transparent;
 }
 .sibling-sites > li.open > button,
 .sibling-sites > li.open > button .glyphicon,
@@ -416,6 +417,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 
 .sibling-sites .dropdown-menu {
   background: #767673;
+  margin-top: 10px;
 }
 .sibling-sites .dropdown-menu a {
   color: #ccc;
