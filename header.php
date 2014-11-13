@@ -44,6 +44,26 @@
             <li><a href="research.php">Research</a></li>
           </ul>
           
+          <ul class="sibling-sites">
+            <li class="hidden-sm"><a href="http://www.carsoup.com"><img src="img/icons/car-30.png" alt="Car icon"/><img src="img/icons/car-30-selected.png" alt="Car icon"/> Cars</a></li>
+            <li class="hidden-sm"><a href="http://atvs.carsoup.com"><img src="img/icons/atv-30.png" alt="ATV icon"/><img src="img/icons/atv-30-selected.png" alt="ATV icon"/> ATV</a></li>
+            <li class="hidden-md hidden-sm"><a href="http://boats.carsoup.com"><img src="img/icons/boat-30.png" alt="Boat icon"/><img src="img/icons/boat-30-selected.png" alt="Boat icon"/> Boat</a></li>
+            <li class="hidden-lg hidden-md hidden-sm"><a href="http://snowmobiles.carsoup.com"><img src="img/icons/snowmobile-30.png" alt="Snowmobile icon"/><img src="img/icons/snowmobile-30-selected.png" alt="Snowmobile icon"/> Snow</a></li>
+            <li class="hidden-lg hidden-md hidden-sm"><a href="http://rvs.carsoup.com"><img src="img/icons/rv-30.png" alt="Boat icon"/><img src="img/icons/rv-30-selected.png" alt="RV icon"/> RV &amp; Campers</a></li>
+            <li class="dropdown hidden-xs">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                <span class="glyphicon glyphicon-chevron-down"></span> More
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li class="hidden-lg hidden-md" role="presentation"><a role="menuitem" tabindex="-1" href="http://www.carsoup.com"><img src="img/icons/car-30-contrast.png" alt="Car icon"/><img src="img/icons/car-30-selected.png" alt="Car icon"/> Cars</a></li>
+                <li class="hidden-lg hidden-md" role="presentation"><a role="menuitem" tabindex="-1" href="http://atvs.carsoup.com"><img src="img/icons/atv-30-contrast.png" alt="ATV icon"/><img src="img/icons/atv-30-selected.png" alt="ATV icon"/> ATVs</a></li>
+                <li class="hidden-lg" role="presentation"><a role="menuitem" tabindex="-1" href="http://boats.carsoup.com"><img src="img/icons/boat-30-contrast.png" alt="Boat icon"/><img src="img/icons/boat-30-selected.png" alt="Boat icon"/> Boats</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://snowmobiles.carsoup.com"><img src="img/icons/snowmobile-30-contrast.png" alt="Snowmobile icon"/><img src="img/icons/snowmobile-30-selected.png" alt="Snowmobile icon"/> Snow</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://rvs.carsoup.com"><img src="img/icons/rv-30-contrast.png" alt="RV icon"/><img src="img/icons/rv-30-selected.png" alt="RV icon"/> RVs &amp; Campers</a></li>
+              </ul>
+            </li>
+          </ul>
+          
           <ul class="social-links list-inline">
             <li><a href="http://www.facebook.com/CarSoup"><span class="glyphicon icon-facebook"></span></a></li>
             <li><a href="http://twitter.com/#!/carsoup"><span class="glyphicon icon-twitter"></span></a></li>

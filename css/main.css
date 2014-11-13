@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 header {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 section, aside {
   margin-bottom: 15px;  
@@ -364,7 +364,67 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   color: #2e2f31;
   background-color: #f1c40f;
 }
-.social-links li a {
+.sibling-sites {;
+  white-space: nowrap;
+  padding-left: 0;
+  list-style: none;
+}
+.sibling-sites > li > a {
+  color: #999;
+  display: block;
+}
+.sibling-sites > li > a:hover,
+.sibling-sites > li > a:focus {
+  color: #f1c40f;
+  text-decoration: none;
+}
+.sibling-sites li  a > img + img{
+  display: none;
+}
+.sibling-sites li a:hover > img {
+  display: none;
+}
+.sibling-sites > li > a:hover > img + img,
+.sibling-sites li.dropdown a:hover > img + img {
+  display: inline;
+}
+.sibling-sites > li > button {
+  background: transparent;
+  border: 0;
+  display: inline;
+  color: #999;
+}
+.sibling-sites .dropdown {
+  vertical-align: bottom;
+}
+.sibling-sites > li > button .glyphicon {
+  font-size: 24px;
+  display: block;
+  color: #777;
+}
+.sibling-sites > li > button:focus,
+.sibling-sites > li > button:focus .glyphicon {
+  color: #999;
+}
+.sibling-sites > li.open > button,
+.sibling-sites > li.open > button .glyphicon,
+.sibling-sites > li > button:hover,
+.sibling-sites > li > button:hover .glyphicon {
+  background: transparent !important;
+  color: #f1c40f !important;
+}
+
+.sibling-sites .dropdown-menu {
+  background: #767673;
+}
+.sibling-sites .dropdown-menu a {
+  color: #ccc;
+}
+.sibling-sites .dropdown-menu a:hover {
+  color: #f1c40f;
+  background: transparent;
+}
+.social-links > li > a {
   color: #777;
 }
 .social-links li a:hover,
@@ -1716,9 +1776,21 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   body {
     padding-top: 54px;
   }
+  .sibling-sites {
+    margin-left: -15px;
+  }
+  .sibling-sites > li > a {
+    padding: 5px 15px;
+  }
+  .sibling-sites > li > a:hover {
+    background-color:  #444;
+  }
   .nav-logo img{
     max-height: 34px;
     width: auto;
+  }
+  .navbar-collapse {
+    max-height: 440px;
   }
   .social-links {
     float: right;
@@ -2134,6 +2206,33 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   body {
     padding-top: 90px;
   }
+  .sibling-sites {
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 5px;
+    float: left;
+  }
+  .sibling-sites > li {
+    display: inline-block;
+    padding-right: 15px;
+    float: none;
+  }
+  .sibling-sites > li > a,
+  .sibling-sites > li > button {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .sibling-sites > li > a > img {
+    display: block;
+  }
+  .sibling-sites > li > button .glyphicon {
+    font-size: 18px;
+  }
+  .sibling-sites > li > a:hover > img + img {
+    display: block;
+  }
   ul.rl-sm-4 li,
   ul.rl-sm-3 li,
   ul.rl-sm-2 li,
@@ -2209,6 +2308,10 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
 }
 @media (min-width: 992px) {
+  .sibling-sites {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
   main > div {
     /* min-height: 600px; */
   }
