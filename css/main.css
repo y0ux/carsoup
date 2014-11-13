@@ -385,7 +385,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   display: none;
 }
 .sibling-sites > li > a:hover > img + img,
+.sibling-sites > li > a:focus > img + img,
 .sibling-sites li.dropdown a:hover > img + img {
+.sibling-sites li.dropdown a:focus > img + img {
   display: inline;
 }
 .sibling-sites > li > button {
@@ -2232,6 +2234,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   .sibling-sites > li > button .glyphicon {
     font-size: 18px;
   }
+  .sibling-sites > li > a:focus > img + img,
   .sibling-sites > li > a:hover > img + img {
     display: block;
   }
