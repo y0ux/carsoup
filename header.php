@@ -45,6 +45,7 @@
           </ul>
           
           <ul class="sibling-sites">
+            <li class="visible-xs"><span class="title">More sites</span></li>
             <li class="hidden-sm"><a href="http://www.carsoup.com"><img src="img/icons/car-30.png" alt="Car icon"/><img src="img/icons/car-30-selected.png" alt="Car icon"/> Cars</a></li>
             <li class="hidden-sm"><a href="http://atvs.carsoup.com"><img src="img/icons/atv-30.png" alt="ATV icon"/><img src="img/icons/atv-30-selected.png" alt="ATV icon"/> ATV</a></li>
             <li class="hidden-md hidden-sm"><a href="http://boats.carsoup.com"><img src="img/icons/boat-30.png" alt="Boat icon"/><img src="img/icons/boat-30-selected.png" alt="Boat icon"/> Boat</a></li>

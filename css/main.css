@@ -373,6 +373,13 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   color: #999;
   display: block;
 }
+.sibling-sites > li > .title {
+  color: #777;
+  display: block;
+  border-top: 1px solid #444;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
 .sibling-sites > li > a:hover,
 .sibling-sites > li > a:focus {
   color: #f1c40f;
@@ -416,10 +423,8 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   background: transparent !important;
   color: #f1c40f !important;
 }
-
 .sibling-sites .dropdown-menu {
   background: #767673;
-  margin-top: 10px;
 }
 .sibling-sites .dropdown-menu a {
   color: #ccc;
@@ -1782,9 +1787,14 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   .sibling-sites {
     margin-left: -15px;
+    margin-right: -15px;
   }
   .sibling-sites > li > a {
     padding: 5px 15px;
+    text-transform: uppercase;
+  }
+  .sibling-sites > li > a > img {
+    margin-right: 10px;
   }
   .sibling-sites > li > a:hover {
     background-color:  #444;
@@ -1794,7 +1804,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     width: auto;
   }
   .navbar-collapse {
-    max-height: 440px;
+    max-height: 480px;
   }
   .social-links {
     float: right;
@@ -2232,11 +2242,14 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     display: block;
   }
   .sibling-sites > li > button .glyphicon {
-    font-size: 18px;
+    font-size: 16px;
   }
   .sibling-sites > li > a:focus > img + img,
   .sibling-sites > li > a:hover > img + img {
     display: block;
+  }
+  .sibling-sites .dropdown-menu {
+    margin-top: 0px;
   }
   ul.rl-sm-4 li,
   ul.rl-sm-3 li,
@@ -2316,6 +2329,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   .sibling-sites {
     margin-top: 30px;
     margin-left: 20px;
+  }
+  .sibling-sites .dropdown-menu {
+    margin-top: 10px;
   }
   main > div {
     /* min-height: 600px; */
