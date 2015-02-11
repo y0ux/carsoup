@@ -3,6 +3,15 @@
   *****************/
 $(document).ready(function() {
   
+  $('.setPopover').each(function(){
+    var placement = $(this).data('placement');
+    if (!placement)
+      placement = 'auto right';
+    $(this).popover({
+      placement: placement
+    });
+  });
+  
   /******************
     Geolocation
   *****************/

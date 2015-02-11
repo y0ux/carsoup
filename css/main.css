@@ -11,6 +11,9 @@ header {
 section, aside {
   margin-bottom: 15px;  
 }
+.sub-section {
+  padding-bottom: 25px;
+}
 header.article-header,
 section > header {
   border-bottom: 1px solid #bbb;
@@ -40,6 +43,10 @@ h5, .h5 {
 h6, .h6 {
   font-size: 14px;
 }
+.h3-divisor {
+  background: #f1f1f1;
+  padding: 10px 15px;
+}
 .sub-title {
   display: block;
 }
@@ -49,6 +56,10 @@ h6, .h6 {
 .text-xs {
   font-size: 10px;
 }
+.bolder {
+  font-weight: bold;
+}
+a,
 a:link,
 a:visited {
   color: #c0392b;
@@ -69,6 +80,15 @@ a:visited {
   margin-top: 0;
   margin-bottom: 0;
 }
+.clear-margin {
+  margin: 0;
+}
+.clear-padding {
+  padding: 0;
+}
+.clear-both {
+  clear: both;
+}
 .margin-left {
   margin-left: 10px
 }
@@ -80,6 +100,30 @@ a:visited {
 }
 .margin-top {
   margin-top: 10px
+}
+.margin-box {
+  margin: 10px;
+}
+.header-margin {
+  margin: 10px;
+}
+.padding-left {
+  padding-left: 10px;
+}
+.padding-right {
+  padding-right: 10px;
+}
+.padding-top {
+  padding-top: 10px;
+}
+.padding-bottom {
+  padding-bottom: 10px;
+}
+.header-padding {
+  padding: 10px 15px;
+}
+.padding-box {
+  padding: 10px;
 }
 .reset-background {
   background: transparent;
@@ -151,6 +195,34 @@ a.btn-callOA,
   background: #5f6064;
   border-bottom: 3px solid #2e2f31;
 }
+a.btn-line-white,
+.btn-line-white {
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+}
+a.btn-line-white:hover,
+.btn-line-white:hover,
+a.btn-line-white:focus,
+.btn-line-white:focus {
+  background: #fff;
+  color: #000;
+}
+a.btn-line-dark,
+.btn-line-dark {
+  background: transparent;
+  border: 3px solid #444;
+  color: #444;
+}
+a.btn-line-dark:hover,
+.btn-line-dark:hover,
+a.btn-line-dark:focus,
+.btn-line-dark:focus {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+
 .label-price {
   background: #f1c40f;
   color: #2e2f31;
@@ -315,6 +387,52 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 }
 .modal-header .close:hover:after {
   background: #e74c3c;
+}
+.one-true { overflow: hidden; }
+.one-true .pilar {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+.hint {
+  color: #bbb;
+}
+.list-icon li {
+  padding: 0 0 5px 20px;
+  display: block;
+  position: relative;
+}
+.list-icon li:before {
+  font-family: 'Glyphicons Halflings';
+  position: absolute;
+  left: 0px;
+  top:3px;
+  font-size:80%
+}
+.list-chevron-right li:before {
+ content: '\e080';
+}
+.list-checkmark li:before {
+ content: '\e067';
+}
+.list-arrow-right li:before {
+ content: '\e092';
+}
+@media (max-width: 768px) {
+  .form-wizard.nav-justified > li > a {
+    border-radius: 4px;
+    margin-right: 0;
+  }
+  .form-wizard.nav-justified > li > a:before,
+  .form-wizard.nav-justified > li > a:after {
+    border: none !important;
+  }
+}
+.fluid-image{
+  max-width: 100%;
+}
+.form-divisor {
+  border-top: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 /* ==========================================================================
    Header
@@ -1658,20 +1776,33 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 #sell-form {
   /*min-height: 600px*/
 }
-
+.form-steps,
 #sell-form .form-steps {
   margin: 30px 0;
   text-align: center;
 }
-
+.form-steps li,
 #sell-form .form-steps li {
   background-color: #ddd;
   padding: 10px 15px;
   margin: 0;
   display: block;
 }
+.form-steps li.active,
 #sell-form .form-steps li.active {
   background-color: #f1c40f;
+}
+/* ==========================================================================
+   PPA
+   ========================================================================== */
+.light-background {
+  background: #f1f1f1;
+}
+.dark-background {
+  background: #ddd;
+}
+.darker-background {
+  
 }
 /* ==========================================================================
    Footer
@@ -2100,6 +2231,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     font-size: 14px;
     float: none !important;
   }
+  .col-xxs1, .col-xxs2,.col-xxs3,.col-xxs4,.col-xxs5,.col-xxs6,.col-xxs7,.col-xxs8,.col-xxs9,.col-xxs10,.col-xxs11 {
+    float: left;
+  }
   .col-xxs-1 {
     width: 8.333%;
   }
@@ -2296,6 +2430,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     bottom: 0;
     right: 0;
   }
+  .form-steps li,
   #sell-form .form-steps li {
     padding-left: 30px;
     padding-right: 10px;
@@ -2303,9 +2438,12 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     float: left;
     position: relative;
   }
+  .form-steps li:first-of-type,
   #sell-form .form-steps li:first-of-type {
     padding-left: 20px;
   }
+  .form-steps li:before,
+  .form-steps li:after,
   #sell-form .form-steps li:before,
   #sell-form .form-steps li:after {
     border-style: solid;
@@ -2317,10 +2455,12 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     top: 0;
     z-index: 1;
   }
+  .form-steps li:before,
   #sell-form .form-steps li:before {
     right: -21px;
-    border-left-color: #bbb;
+    border-left-color: #fff;
   }
+  .form-steps li.active:after,
   #sell-form .form-steps li.active:after {
     border-left-color: #f1c40f;
   }
