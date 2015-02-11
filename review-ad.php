@@ -8,8 +8,8 @@
               <p class="hint">TIP, email <a href="#">help@carsoup.com</a> for additional suggestions. You can edit your ad at any time during the process.</p>
               
               <ul class="form-steps list-unstyled list-inline h4 float-fix">
-                <li class="active"><span class="glyphicon glyphicon-chevron-down"></span> Ad Details</li>
-                <li><span class="glyphicon glyphicon-chevron-right"></span> Review Ad</li>
+                <li><span class="glyphicon glyphicon-ok"></span> Ad Details</li>
+                <li class="active"><span class="glyphicon glyphicon-chevron-down"></span> Review Ad</li>
                 <li><span class="glyphicon glyphicon-chevron-right"></span> Submit</li>
               </ul>
 

@@ -1,4 +1,8 @@
 <?php require_once('header.php'); ?>
+
+<link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+<script src="js/fileinput.min.js" type="text/javascript"></script>
+
             <section id="ad-details">
               <header class="article-header">
                 <h1>Create Your Ad</h1>
@@ -8,8 +12,8 @@
               <p class="hint">TIP, email <a href="#">help@carsoup.com</a> for additional suggestions. You can edit your ad at any time during the process.</p>
               
               <ul class="form-steps list-unstyled list-inline h4 float-fix">
-                <li><span class="glyphicon glyphicon-ok"></span> Ad Details</li>
-                <li class="active"><span class="glyphicon glyphicon-chevron-down"></span> Review Ad</li>
+                <li class="active"><span class="glyphicon glyphicon-chevron-down"></span> Ad Details</li>
+                <li><span class="glyphicon glyphicon-chevron-right"></span> Review Ad</li>
                 <li><span class="glyphicon glyphicon-chevron-right"></span> Submit</li>
               </ul>
 
@@ -105,8 +109,8 @@
                 
                 <div class="form-group">
                   <label class="col-sm-2 control-label" for="photo">Photo(s)</label>
-                  <div class="col-sm-5">
-                    <input type="file" id="photo">
+                  <div class="col-sm-6">
+                    <input type="file" id="photo" class="file" data-preview-file-type="text" data-show-upload="false">
                   </div>
                   <ul class="list-unstyled">
                     <li><a tabindex="0" class="setPopover" data-placement="auto top" role="button" data-toggle="popover" data-trigger="focus" title="Tips Title" data-content="Tips content">Tips & Recomendations</a></li>
@@ -118,8 +122,9 @@
                   <div class="col-sm-offset-2 col-sm-10">
                     <a class="btn btn-callOA-contrast" data-toggle="collapse" href="#collapsePhotos" aria-expanded="false" aria-controls="collapsePhotos">Add 5 additional photos for $5</a>
                     <div class="collapse margin-top" id="collapsePhotos">
-                      <div class="well">
-                        ...
+                      <div class="well reset-background">
+                        <p>Select the pictures you want to add by pressing <kbd>Shift</kbd> key while clicking.
+                        <input type="file" id="photo" class="file" data-preview-file-type="text" multiple="true" data-show-upload="false" data-show-caption="false" data-max-file-count="5">
                       </div>
                     </div>
                   </div>
@@ -130,7 +135,7 @@
                   <div class="col-sm-10">
                     <a class="btn btn-callOA-contrast" data-toggle="collapse" href="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo">Add a Youtube video for $5</a>
                     <div class="collapse margin-top" id="collapseVideo">
-                      <div class="well">
+                      <div class="well reset-background">
                         <input type="text" class="form-control" id="youtube" placeholder="place the url here">
                       </div>
                     </div>
