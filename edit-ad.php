@@ -5,7 +5,7 @@
 
             <section id="ad-details">
               <header class="article-header">
-                <h1>Create Your Ad</h1>
+                <h1>Edit Your Ad</h1>
               </header>
               
               <p>It’s easy. Keep in mind that shoppers are looking for reasons to buy. Providing a lot of details and fully describing the features helps.</p>
@@ -19,7 +19,20 @@
 
               <form class="form-horizontal" action="review-ad.php" method="post" role="form">
                 
-                <h3 class="h3-divisor"><img src="img/icons/atv-35.png"/> ATV Information</h3>
+                <div class="h3-divisor float-fix clear-padding padding-top padding-bottom margin-bottom">
+                  <div class="col-xs-7 col-xxs-12 text-xxs-center margin-bottom">
+                    <h3 class="reset-vertical-margin">
+                      <img src="img/icons/atv-35.png"/> ATV Information
+                    </h3>
+                    <span class="text-sm text-danger clear-both margin-top">Status: Disabled <span class="glyphicon glyphicon-exclamation-sign"></span></span>
+                  </div>
+                  <div class="col-xs-5 col-xxs-12 text-right text-xxs-center">
+                    <button type="button" class="btn btn-callOA-contrast btn-full-width-xxs"><span class="glyphicon glyphicon-refresh"></span> Renew</button>
+                    <div class="text-danger text-sm">
+                      Expiration date: February 10, 2015
+                    </div>
+                  </div>
+                </div >
                 
                 <div class="form-group">
                   <label class="col-sm-2 control-label" for="make">Type</label>
@@ -111,6 +124,14 @@
                   <label class="col-sm-2 control-label" for="photo">Photo(s)</label>
                   <div class="col-sm-6">
                     <input type="file" id="photo" class="file" data-preview-file-type="text" data-show-upload="false">
+                    <script type="text/javascript">
+                      $("#photo").fileinput({
+                          initialPreview: [
+                              "<img src='img/ppa/kawasaki.jpg' class='file-preview-image' alt='Kawasaki Prairie' title='Kawasaki Prairie'>"
+                          ],
+                          initialCaption: "Kawasaki Prairie"
+                      });
+                    </script>
                   </div>
                   <ul class="list-unstyled">
                     <li><a tabindex="0" class="setPopover" data-placement="auto top" role="button" data-toggle="popover" data-trigger="focus" title="Tips Title" data-content="Tips content">Tips & Recomendations</a></li>
@@ -121,15 +142,58 @@
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
                     <a class="btn btn-callOA-contrast" data-toggle="collapse" href="#collapsePhotos" aria-expanded="false" aria-controls="collapsePhotos">Add 5 additional photos for $5</a>
-                    <div class="collapse margin-top" id="collapsePhotos">
-                      <div class="well reset-background">
-                        <!--p class="hidden-xs hidden-xs">Select the pictures you want to add by pressing <kbd>Shift</kbd> key while clicking.</p-->
-                        
+                    <div class="collapse in margin-top" id="collapsePhotos">
+                      <div class="well reset-background">                        
                         <input type="file" id="extraphoto-1" class="file" data-preview-file-type="text" data-show-upload="false">
+                        <script type="text/javascript">
+                          $("#extraphoto-1").fileinput({
+                              initialPreview: [
+                                  "<img src='img/ppa/kawasaki/kawasaki-1.jpg' class='file-preview-image' alt='Kawasaki Prairie' title='Kawasaki Prairie'>"
+                              ],
+                              initialCaption: "Kawasaki Prairie 1"
+                          });
+                        </script>
+                        
                         <input type="file" id="extraphoto-2" class="file" data-preview-file-type="text" data-show-upload="false">
+                        <script type="text/javascript">
+                          $("#extraphoto-2").fileinput({
+                              initialPreview: [
+                                  "<img src='img/ppa/kawasaki/kawasaki-2.jpg' class='file-preview-image' alt='Kawasaki Prairie' title='Kawasaki Prairie'>"
+                              ],
+                              initialCaption: "Kawasaki Prairie 2"
+                          });
+                        </script>
+                        
                         <input type="file" id="extraphoto-3" class="file" data-preview-file-type="text" data-show-upload="false">
+                        <script type="text/javascript">
+                          $("#extraphoto-3").fileinput({
+                              initialPreview: [
+                                  "<img src='img/ppa/kawasaki/kawasaki-3.jpg' class='file-preview-image' alt='Kawasaki Prairie' title='Kawasaki Prairie'>"
+                              ],
+                              initialCaption: "Kawasaki Prairie 3"
+                          });
+                        </script>
+                        
                         <input type="file" id="extraphoto-4" class="file" data-preview-file-type="text" data-show-upload="false">
+                        <script type="text/javascript">
+                          $("#extraphoto-4").fileinput({
+                              initialPreview: [
+                                  "<img src='img/ppa/kawasaki/kawasaki-4.jpg' class='file-preview-image' alt='Kawasaki Prairie' title='Kawasaki Prairie'>"
+                              ],
+                              initialCaption: "Kawasaki Prairie 4"
+                          });
+                        </script>
+                        
                         <input type="file" id="extraphoto-5" class="file" data-preview-file-type="text" data-show-upload="false">
+                        <script type="text/javascript">
+                          $("#extraphoto-5").fileinput({
+                              initialPreview: [
+                                  "<img src='img/ppa/kawasaki/kawasaki-5.jpg' class='file-preview-image' alt='Kawasaki Prairie' title='Kawasaki Prairie'>"
+                              ],
+                              initialCaption: "Kawasaki Prairie 5"
+                          });
+                        </script>
+                        
                       </div>
                     </div>
                   </div>

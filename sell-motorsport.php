@@ -19,7 +19,8 @@
                   </form>
                 </article>
                 
-                <article class="col-xs-2">
+                <article class="col-xs-2 pilar margin-top" style="background: #fff;">
+                  <div class="visible-xs visible-xxs">&nbsp;</div>
                 </article>
                 
                 <article class="col-xs-5 pilar" style="background: #f1c40f; color: #444; ">

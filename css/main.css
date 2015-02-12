@@ -2292,6 +2292,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     bottom: 0;
     right: 0;
   }
+  .btn-full-width-xxs {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #dealer-profile-page .dealer-buttons {
