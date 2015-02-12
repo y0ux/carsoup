@@ -3,7 +3,7 @@
 <link href="css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
 <script src="js/fileinput.min.js" type="text/javascript"></script>
 
-            <section id="ad-details">
+            <section id="edit-ad">
               <header class="article-header">
                 <h1>Edit Your Ad</h1>
               </header>
@@ -27,7 +27,7 @@
                     <span class="text-sm text-danger clear-both margin-top">Status: Disabled <span class="glyphicon glyphicon-exclamation-sign"></span></span>
                   </div>
                   <div class="col-xs-5 col-xxs-12 text-right text-xxs-center">
-                    <button type="button" class="btn btn-callOA-contrast btn-full-width-xxs"><span class="glyphicon glyphicon-refresh"></span> Renew</button>
+                    <button type="button" class="btn btn-callOA-contrast btn-full-width-xxs"><span class="glyphicon glyphicon-repeat"></span> Renew</button>
                     <div class="text-danger text-sm">
                       Expiration date: February 10, 2015
                     </div>
