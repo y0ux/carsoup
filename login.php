@@ -39,9 +39,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group reset-vertical-margin">
+                  <div class="form-group">
                     <div class="col-sm-offset-1 col-sm-10">
                       <button type="submit" class="btn btn-lg btn-callOA-contrast">Sign in</button>
+                    </div>
+                  </div>
+                  <div class="form-group reset-vertical-margin">
+                    <div class="col-sm-offset-1 col-sm-10">
+                      <a href="#" class="" data-toggle="modal" data-target="#forgotPassword">Forgot your password?</a>
                     </div>
                   </div>
                 </form>
@@ -49,6 +54,40 @@
               </div>
               <p class="margin-top">Not a member yet? <a href="#">Create an Account</a></p>
             </section>
+
+            <!-- Forgot Password -->
+            <div class="modal fade" id="forgotPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form class="form-horizontal" action="#">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Get Your Password By Email</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Simply provide us with the email address and zip code used when registering with CarSoup, and your password will be emailed to you in a matter of minutes. If you do not receive your password shortly, please contact us at <a href="#">help@carsoup.com</a> and we will be happy to assist you.</p>
+                      <div class="form-group">
+                        <label for="forgotEmail" class="col-sm-1 control-label"><span class="glyphicon glyphicon-envelope"></span></label>
+                        <div class="col-sm-6">
+                          <input type="email" class="form-control" id="forgotEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="forgotZip" class="col-sm-1 control-label"><span class="glyphicon glyphicon-map-marker"></span></label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" id="forgotZip" placeholder="Zip code">
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-callOA-contrast">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
             
         
 <?php require_once('footer.php'); ?>
