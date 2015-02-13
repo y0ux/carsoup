@@ -43,6 +43,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 14px;
 }
+.header-divisor,
 .h3-divisor {
   background: #f1f1f1;
   padding: 10px 15px;
@@ -224,7 +225,30 @@ a.btn-line-dark:focus,
   border-color: #000;
   color: #fff;
 }
-
+a.btn-facebook,
+.btn-facebook {
+  background: #3b5998;
+  color: #fff;
+  border-color: #163474;
+}
+a.btn-facebook:hover,
+.btn-facebook:hover {
+  color: #fff;
+  background: #737373;
+  border-color: #ccc;
+}
+a.btn-google,
+.btn-google {
+  background: #dd4b39;
+  color: #fff;
+  border-color: #b52210;
+}
+a.btn-google:hover,
+.btn-google:hover {
+  color: #fff;
+  background: #737373;
+  border-color: #8b9dc3;
+}
 .label-price {
   background: #f1c40f;
   color: #2e2f31;
@@ -435,6 +459,34 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .form-divisor {
   border-top: 1px solid #ccc;
   margin-bottom: 20px;
+}
+.horizontal-line {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.horizontal-line:before {
+  content: "";
+  display: block;
+  border-top: solid 1px #ccc;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+.horizontal-line span {
+  background: #fff;
+  padding: 0 20px;
+  position: relative;
+  z-index: 5;
+}
+.border-element {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+.no-border {
+  border: 0 !important;
 }
 /* ==========================================================================
    Header
@@ -1820,6 +1872,10 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 }
 
 /* ==========================================================================
+   Login
+   ========================================================================== */
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 .top-footer {
@@ -2847,160 +2903,3 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .icon-safari:before {
 	content: "\e383";
 }
-/*@font-face {
-	font-family: 'icons';
-	src:url('../fonts/icons.eot?uiqg95');
-	src:url('../fonts/icons.eot?#iefixuiqg95') format('embedded-opentype'),
-		url('../fonts/icons.woff?uiqg95') format('woff'),
-		url('../fonts/icons.ttf?uiqg95') format('truetype'),
-		url('../fonts/icons.svg?uiqg95#icons') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== * /
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-aid:before {
-	content: "\e600";
-}
-.icon-google-plus:before {
-	content: "\e601";
-}
-.icon-facebook:before {
-	content: "\e602";
-}
-.icon-twitter:before {
-	content: "\e603";
-}
-.icon-pinterest:before {
-	content: "\e604";
-}
-.icon-google-plus2:before {
-	content: "\e605";
-}
-.icon-google-drive:before {
-	content: "\e606";
-}
-.icon-instagram:before {
-	content: "\e607";
-}
-.icon-youtube:before {
-	content: "\e608";
-}
-.icon-vimeo:before {
-	content: "\e609";
-}
-.icon-flickr:before {
-	content: "\e60a";
-}
-.icon-dribbble:before {
-	content: "\e60b";
-}
-.icon-picassa:before {
-	content: "\e60c";
-}
-.icon-linkedin:before {
-	content: "\e60d";
-}
-.icon-delicious:before {
-	content: "\e60e";
-}
-.icon-share:before {
-	content: "\e60f";
-}
-.icon-pinterest2:before {
-	content: "\e610";
-}
-.icon-html5:before {
-	content: "\e611";
-}
-.icon-html52:before {
-	content: "\e612";
-}
-.icon-css3:before {
-	content: "\e613";
-}
-.icon-chrome:before {
-	content: "\e614";
-}
-.icon-firefox:before {
-	content: "\e615";
-}
-.icon-IE:before {
-	content: "\e616";
-}
-.icon-opera:before {
-	content: "\e617";
-}
-.icon-safari:before {
-	content: "\e618";
-}
-.icon-location:before {
-	content: "\e619";
-}
-.icon-location2:before {
-	content: "\e61a";
-}
-.icon-map:before {
-	content: "\e61b";
-}
-.icon-print:before {
-	content: "\e61c";
-}
-.icon-screen:before {
-	content: "\e61d";
-}
-.icon-laptop:before {
-	content: "\e61e";
-}
-.icon-mobile:before {
-	content: "\e61f";
-}
-.icon-mobile2:before {
-	content: "\e620";
-}
-.icon-tablet:before {
-	content: "\e621";
-}
-.icon-meter:before {
-	content: "\e622";
-}
-.icon-meter2:before {
-	content: "\e623";
-}
-.icon-dashboard:before {
-	content: "\e624";
-}
-.icon-remove:before {
-	content: "\e625";
-}
-.icon-road:before {
-	content: "\e626";
-}
-.icon-globe:before {
-	content: "\e627";
-}
-.icon-star:before {
-	content: "\e628";
-}
-.icon-star2:before {
-	content: "\e629";
-}
-.icon-star3:before {
-	content: "\e62a";
-}
-*/
-
-
