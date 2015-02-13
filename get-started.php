@@ -5,7 +5,7 @@
               </header>
 
               <div class="row text-center sub-section one-true" style="margin-top: 30px">
-                <div class="text-right"><a href="#"><span class="glyphicon glyphicon-edit"></span> Modify existing add</a></div>
+                <div class="text-right"><a href="ad-list.php"><span class="glyphicon glyphicon-edit"></span> Modify existing add</a></div>
                 <article class="col-xs-5 pilar" style="background: #f7f4ed; margin-left: auto; margin-right: auto; float: none; padding-top: 0;">
                   <h2 style="background-color: #e74c3c; margin: 0 -15px; padding: 15px 0; color: #fff;">FREE! <span class="sub-title" style="font-size: 60%; color: #f9beb8; font-weight: normal;">Good deal for curios sellers </span></h2>
                   <ul class="text-left" style="margin-top: 20px;">

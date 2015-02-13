@@ -20,7 +20,7 @@
               <form class="form-horizontal" action="review-ad.php" method="post" role="form">
                 
                 <div class="h3-divisor float-fix clear-padding padding-top padding-bottom margin-bottom">
-                  <div class="col-xs-7 col-xxs-12 text-xxs-center margin-bottom">
+                  <div class="col-xs-7 col-xxs-12 text-xxs-center">
                     <h3 class="reset-vertical-margin">
                       <img src="img/icons/atv-35.png"/> ATV Information
                     </h3>

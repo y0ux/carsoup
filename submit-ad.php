@@ -83,7 +83,7 @@
                     </div>
                   </div>
                   
-                  <h3 class="h3-divisor"><span class="glyphicon glyphicon-user"></span> Payment Method</h3>
+                  <h3 class="h3-divisor"><span class="glyphicon glyphicon-credit-card"></span> Payment Method</h3>
                   
                   <div role="tabpanel">
 

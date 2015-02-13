@@ -9,7 +9,6 @@
               Thank you for renewing your ad for the <strong>Kawasaki Prairie 360 - 2011</strong>.
             </div>
 
-
             <div role="tabpanel">
 
               <!-- Nav tabs -->
@@ -50,7 +49,7 @@
                       </div>
                       <div class="col-sm-9">
                         <div class="row">
-                          <h2 class="col-sm-9"><a href="eedit-ad.php">Kawasaki - Priarie 360 - 2011</a></h2>
+                          <h2 class="col-sm-9"><a href="edit-ad.php">Kawasaki - Priarie 360 - 2011</a></h2>
                           <div class="col-sm-3 h2 text-right text-sm-left">$1,750</div>
                         </div>
                         <div>Display in <strong>5 searches</strong> and <strong>view 40 times</strong>.</div>
@@ -69,7 +68,7 @@
                       </div>
                       <div class="col-sm-9">
                         <div class="row">
-                          <h2 class="col-sm-9"><a href="eedit-ad.php">Kawasaki - Priarie 360 - 2012</a></h2>
+                          <h2 class="col-sm-9"><a href="edit-ad.php">Kawasaki - Priarie 360 - 2012</a></h2>
                           <div class="col-sm-3 h2 text-right text-sm-left">$1,900</div>
                         </div>
                         <div>Display in <strong>5 searches</strong> and <strong>view 40 times</strong>.</div>
@@ -84,19 +83,21 @@
                     </article>
                   </div>
                   
-                  <nav>
-                    <ul class="pagination pagination-lg">
+                  <nav class="text-center">
+                    <ul class="pagination pagination-lg inline-block">
                       <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
                       <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                      <li class="active"><a href="#">2</a></li>
-                      <li class="active"><a href="#">3</a></li>
-                      <li class="active"><a href="#">4</li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
                     </ul>
                   </nav>
                   
                 </div>
                 <div role="tabpanel" class="tab-pane" id="account">
-                  
+                  Account info
                 </div>
               </div>
 

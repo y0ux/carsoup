@@ -140,11 +140,13 @@ a:visited {
 .btn-xxl {
   
 }
+a.btn-default,
 .btn-default {
   color: #777;
   background: #d4d3d1;
   border-bottom: 3px solid #999;
 }
+a.btn-default.relevant,
 .btn-default.relevant{
   color: #eee;
   background: #95979c;
