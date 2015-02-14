@@ -1967,6 +1967,21 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
    Media Queries
    ========================================================================== */
 @media (max-width: 991px) {
+  .text-sm-center {
+    text-align: center;
+  }
+  .text-sm-left {
+    text-align: left;
+  }
+  .text-sm-right {
+    text-align: right;
+  }
+  .half-width-sm {
+    width: 50%;
+  }
+  .pull-sm-none {
+    float: none !important;
+  }
   .right-column {
     width: 100%;
   }
@@ -2150,20 +2165,23 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   .copyright-notice p {
     padding: 5px 0;
   }
-  .text-sm-center {
+  .text-xs-center {
     text-align: center;
   }
-  .text-sm-left {
+  .text-xs-left {
     text-align: left;
   }
-  .text-sm-right {
+  .text-xs-right {
     text-align: right;
   }
-  .half-width-sm {
+  .half-width-xs {
     width: 50%;
   }
-  .pull-sm-none {
+  .pull-xs-none {
     float: none !important;
+  }
+  .text-xs-center {
+    text-align: center;
   }
   .margin-top-xs {
     margin-top: 15px;
