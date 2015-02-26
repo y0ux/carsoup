@@ -2221,9 +2221,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   .pull-xs-none {
     float: none !important;
   }
-  .text-xs-center {
-    text-align: center;
-  }
   .margin-top-xs {
     margin-top: 15px;
   }
@@ -2288,6 +2285,17 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   #research.launch-soon .information {
     padding: 0 20px;
   }
+  .search-view-list .article-header h3 {
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .search-view-list .article-header h3 span{
+    font-size: .8em;
+  }
+  .search-view-list .article-header .vehicle-price {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
   .remove-float-xxs {
     float: none !important;
   }
@@ -2344,9 +2352,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5 {
     width: 100%;
   }
-  .text-xxs-center {
-    text-align: center;
-  }
   .pull-none-xxs {
     float: none !important;
   }
@@ -2372,6 +2377,18 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   h6, .h6{
     font-size: 14px;
     float: none !important;
+  }
+  .text-xxs-center {
+    text-align: center;
+  }
+  .text-xxs-left {
+    text-align: left;
+  }
+  .text-xxs-right {
+    text-align: right;
+  }
+  .text-xxs-size-normal {
+    font-size: 14px;
   }
   .col-xxs1, .col-xxs2,.col-xxs3,.col-xxs4,.col-xxs5,.col-xxs6,.col-xxs7,.col-xxs8,.col-xxs9,.col-xxs10,.col-xxs11 {
     float: left;
