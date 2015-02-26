@@ -36,86 +36,217 @@
           <!-- search results -->
           <div class="row row-offcanvas row-offcanvas-left">
             <div class="offcanvas-container">
-              <div class="col-sm-5 sidebar-offcanvas">
+              
+              <div class="col-sm-3 sidebar-offcanvas">
                 <form class="sorting-box" action="srp.php" method="post">
                   <h4 class="h2"><span class="glyphicon glyphicon-filter"></span> Filter</h4>
-                  <div class="float-fix">
-                    <button type="submit" class="btn btn-callOA pull-right button-expand-xxs">Apply</button>
-                  </div>
-                  <div class="padding-left padding-right">
 
-                        <div class="form-group">
-                          <h4 class="filterPrice">Filter by Condition</h4>
-                          <div class="row">
-                            <div class="checkbox col-xs-4 col-xxs-6">
-                              <label>
-                                <input type="checkbox" id="inlineCheckbox1" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> New (33)</span>
-                              </label>
-                            </div>
-                            <div class="checkbox col-xs-4 col-xxs-6">
-                              <label>
-                                <input type="checkbox" id="inlineCheckbox2" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Used (134)</span>
-                              </label>
-                            </div>
-                          </div>
+                  <div class="padding-left padding-right">
+                    
+                    <div class="form-group h4">
+                      <a href="#" data-toggle="modal" data-target="#makeModal">Make <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                    
+                    <div class="form-group h4">
+                      <a href="#" data-toggle="modal" data-target="#conditionModal">Condition <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                    
+                    <div class="form-group h4">
+                      <a href="#" data-toggle="modal" data-target="#priceModal">Price <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                    
+                    <div class="form-group h4">
+                      <a href="#" data-toggle="modal" data-target="#yearModal">Year <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                    
+                    <div class="form-group h4">
+                      <a href="#" data-toggle="modal" data-target="#colorModal">Exterior Color <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                    
+                    <div class="form-group h4">
+                      <a href="#" data-toggle="modal" data-target="#bodyModal">Body Style <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+
+                    
+
+                  </div>
+
+                </form>
+                
+                <!-- Make Modal -->
+                <div class="modal fade" id="makeModal" tabindex="-1" role="dialog" aria-labelledby="makeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Select a Make</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Make 1
+                          </label>
                         </div>
-                        <div class="form-group">
-                          <h4 class="filterYear">Filter by Price</h4>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Make 2
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Make 3
+                          </label>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-callOA-contrast">Apply Changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Condition Modal -->
+                <div class="modal fade" id="conditionModal" tabindex="-1" role="dialog" aria-labelledby="conditionModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Select a Condition</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> New
+                          </label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Used
+                          </label>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-callOA-contrast">Apply Changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Price Modal -->
+                <div class="modal fade" id="priceModal" tabindex="-1" role="dialog" aria-labelledby="priceModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Select a Price</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox4" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $25,001-$30,000 (4)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox5" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $30,001-$35,000 (10)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox6" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $35,001-$40,000 (26)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox7" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $40,001-$45,000 (43)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox8" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $45,001-$50,000 (55)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox9" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $50,001-$55,000 (12)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox10" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $55,001-$60,000 (11)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox11" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $60,001-$65,000 (6)</span>
+                        </label></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-callOA-contrast">Apply Changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Year Modal -->
+                <div class="modal fade" id="yearModal" tabindex="-1" role="dialog" aria-labelledby="yearModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Select a Year</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="checkbox col-xs-4 col-xxs-6"><label>
+                            <input type="checkbox" id="inlineCheckbox12" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Any Year (167)</span>
+                          </label></div>
+                          <div class="checkbox col-xs-4 col-xxs-6"><label>
+                            <input type="checkbox" id="inlineCheckbox13" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> 2015 (3)</span>
+                          </label></div>
+                          <div class="checkbox col-xs-4 col-xxs-6"><label>
+                            <input type="checkbox" id="inlineCheckbox14" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> 2014 (134)</span>
+                          </label></div>
+                          <div class="checkbox col-xs-4 col-xxs-6"><label>
+                            <input type="checkbox" id="inlineCheckbox15" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> 2013 (30)</span>
+                          </label></div>
+                        </div>
+                        
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox4" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $25,001-$30,000 (4)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox5" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $30,001-$35,000 (10)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox6" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $35,001-$40,000 (26)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox7" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $40,001-$45,000 (43)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox8" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $45,001-$50,000 (55)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox9" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $50,001-$55,000 (12)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox10" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $55,001-$60,000 (11)</span>
+                        </label></div>
+                        <div class="checkbox col-xs-4 col-xxs-6"><label>
+                          <input type="checkbox" id="inlineCheckbox11" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $60,001-$65,000 (6)</span>
+                        </label></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-callOA-contrast">Apply Changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Exerior Color Modal -->
+                <div class="modal fade" id="colorModal" tabindex="-1" role="dialog" aria-labelledby="colorModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Select a Exterior Color</h4>
+                      </div>
+                      <div class="modal-body">
+                        
                           <div class="row">
                             <div class="checkbox col-xs-4 col-xxs-6">
                               <label>
-                                <input type="checkbox" id="inlineCheckbox3" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Any Price (167)</span>
-                              </label>
-                            </div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox4" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $25,001-$30,000 (4)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox5" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $30,001-$35,000 (10)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox6" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $35,001-$40,000 (26)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox7" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $40,001-$45,000 (43)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox8" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $45,001-$50,000 (55)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox9" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $50,001-$55,000 (12)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox10" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $55,001-$60,000 (11)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox11" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> $60,001-$65,000 (6)</span>
-                            </label></div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <h4 class="filterPrice">Filter by Year</h4>
-                          <div class="row">
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox12" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Any Year (167)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox13" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> 2015 (3)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox14" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> 2014 (134)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox15" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> 2013 (30)</span>
-                            </label></div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <h4 class="filterPrice">Filter by Exterior Color</h4>
-                          <div class="row">
-                            <div class="checkbox col-xs-4 col-xxs-6">
-                              <label>
-                                <input type="checkbox" id="inlineCheckbox16" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Any Exerior Color (167)</span>
+                                <input type="checkbox" id="inlineCheckbox16" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Any Exterior Color (167)</span>
                               </label>
                             </div>
                             <div class="checkbox col-xs-4 col-xxs-6"><label>
@@ -137,36 +268,59 @@
                               <input type="checkbox" id="inlineCheckbox22" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Other (5)</span>
                             </label></div>
                           </div>
-                        </div>
-                        <div class="form-group">
-                          <h4 class="filterPrice">Filter by Body Style</h4>
-                          <div class="row">
-                            <div class="checkbox col-xs-4 col-xxs-6">
-                              <label>
-                                <input type="checkbox" id="inlineCheckbox23" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Any Body Style (167)</span>
+]]
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-callOA-contrast">Apply Changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <!-- Body Style Modal -->
+                <div class="modal fade" id="bodyModal" tabindex="-1" role="dialog" aria-labelledby="bodyModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Select a Body Style</h4>
+                      </div>
+                      <div class="modal-body">
+                        
+                         <div class="row">
+                          <div class="checkbox col-xs-4 col-xxs-6">
+                            <label>
+                              <input type="checkbox" id="inlineCheckbox23" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Any Body Style (167)</span>
 
-                              </label>
-                            </div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox24" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Dual Purppose (41)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox25" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Road/Street (86)</span>
-                            </label></div>
-                            <div class="checkbox col-xs-4 col-xxs-6"><label>
-                              <input type="checkbox" id="inlineCheckbox26" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Other (40)</span>
-                            </label></div>
+                            </label>
                           </div>
+                          <div class="checkbox col-xs-4 col-xxs-6"><label>
+                            <input type="checkbox" id="inlineCheckbox24" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Dual Purppose (41)</span>
+                          </label></div>
+                          <div class="checkbox col-xs-4 col-xxs-6"><label>
+                            <input type="checkbox" id="inlineCheckbox25" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Road/Street (86)</span>
+                          </label></div>
+                          <div class="checkbox col-xs-4 col-xxs-6"><label>
+                            <input type="checkbox" id="inlineCheckbox26" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Other (40)</span>
+                          </label></div>
                         </div>
-
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-callOA-contrast">Apply Changes</button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="float-fix">
-                    <button type="submit" class="btn btn-callOA pull-right button-expand-xxs">Apply</button>
-                  </div>
-                </form>
+                </div>
+                
+                
               </div>
 
-              <div class="col-sm-7 content-offcanvas">
+              <div class="col-sm-9 content-offcanvas">
                 <div id="search-results" class="search-view-list">
                   <div class="row">
                     <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">
