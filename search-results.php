@@ -37,33 +37,33 @@
           <div class="row row-offcanvas row-offcanvas-left">
             <div class="offcanvas-container">
               
-              <div class="col-sm-3 sidebar-offcanvas">
+              <div class="col-lg-3  col-md-4 col-sm-3 sidebar-offcanvas">
                 <form class="sorting-box" action="srp.php" method="post">
-                  <h4 class="h2 text-xxs-left"><span class="glyphicon glyphicon-filter"></span> Filter</h4>
+                  <h4 class="h3 text-xxs-left"><span class="glyphicon glyphicon-filter"></span> Filter Search</h4>
 
                   <div class="padding-left padding-right">
                     
-                    <div class="form-group h4 text-xs-left text-xxs-left text-xxs-size-normal">
+                    <div class="form-group h5 text-xs-left text-xxs-left text-xxs-size-normal">
                       <a href="#" data-toggle="modal" data-target="#makeModal">Make <span class="glyphicon glyphicon-plus"></span></a>
                     </div>
                     
-                    <div class="form-group h4 text-xs-left text-xxs-left text-xxs-size-normal">
+                    <div class="form-group h5 text-xs-left text-xxs-left text-xxs-size-normal">
                       <a href="#" data-toggle="modal" data-target="#conditionModal">Condition <span class="glyphicon glyphicon-plus"></span></a>
                     </div>
                     
-                    <div class="form-group h4 text-xs-left text-xxs-left text-xxs-size-normal">
+                    <div class="form-group h5 text-xs-left text-xxs-left text-xxs-size-normal">
                       <a href="#" data-toggle="modal" data-target="#priceModal">Price <span class="glyphicon glyphicon-plus"></span></a>
                     </div>
                     
-                    <div class="form-group h4 text-xs-left text-xxs-left text-xxs-size-normal">
+                    <div class="form-group h5 text-xs-left text-xxs-left text-xxs-size-normal">
                       <a href="#" data-toggle="modal" data-target="#yearModal">Year <span class="glyphicon glyphicon-plus"></span></a>
                     </div>
                     
-                    <div class="form-group h4 text-xs-left text-xxs-left text-xxs-size-normal">
+                    <div class="form-group h5 text-xs-left text-xxs-left text-xxs-size-normal">
                       <a href="#" data-toggle="modal" data-target="#colorModal">Exterior Color <span class="glyphicon glyphicon-plus"></span></a>
                     </div>
                     
-                    <div class="form-group h4 text-xs-left text-xxs-left text-xxs-size-normal">
+                    <div class="form-group h5 text-xs-left text-xxs-left text-xxs-size-normal">
                       <a href="#" data-toggle="modal" data-target="#bodyModal">Body Style <span class="glyphicon glyphicon-plus"></span></a>
                     </div>
 
@@ -257,7 +257,6 @@
                   </div>
                 </div>
                 
-                
                 <!-- Body Style Modal -->
                 <div class="modal fade" id="bodyModal" tabindex="-1" role="dialog" aria-labelledby="bodyModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
@@ -298,7 +297,7 @@
                 
               </div>
 
-              <div class="col-sm-9 content-offcanvas">
+              <div class="col-lg-9 col-md-8 col-sm-9 content-offcanvas">
                 <div id="search-results" class="search-view-list">
                   <div class="row">
                     <article class="elem col-lg-4 col-md-4 col-sm-4 col-xs-6 col-xxs-12">

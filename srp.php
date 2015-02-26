@@ -27,21 +27,21 @@ $zipCode = isset($_GET['zipCode']) && $_GET['zipCode']? ucwords($_GET['zipCode']
               <!--a class="btn btn-lg btn-default" href="/"><span class="glyphicon glyphicon-filter"></span> Filter</a-->
               <a class="btn btn-lg btn-default search-button fl" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
             </div>
-            <div class="action-group col-lg-4 col-md-5 col-sm-4 col-xs-12 pull-right text-right visible-sm visible-xs">
+            <div class="action-group-mobile visible-xs">
               
-              <button class="btn btn-lg btn-default relevant button-expand-xxs" data-toggle="offcanvas">
+              <button class="btn btn-lg btn-default col-xs-6" data-toggle="offcanvas">
                 <span class="glyphicon glyphicon-filter"></span>
                 Filter
               </button>
               <!--a class="btn btn-lg btn-default" href="/"><span class="glyphicon glyphicon-filter"></span> Filter</a-->
-              <a class="btn btn-lg btn-default search-button" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
+              <a class="btn btn-lg btn-default search-button col-xs-6" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
             </div>
           </header>
           
           <?php //require_once('featured-dealer.php'); ?>
           
-          <?php require_once('modal-filter.php'); ?>
-          <?php require_once('modal-sort.php'); ?>
+          <?php //require_once('modal-filter.php'); ?>
+          <?php //require_once('modal-sort.php'); ?>
           
           <?php require_once('search-results.php'); ?>
         

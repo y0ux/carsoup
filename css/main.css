@@ -1039,7 +1039,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   margin-top: 20px;
 }
 #srp-page .btn-default {
-  color: #ccc;
+  color: #eee;
   background: #777;
 }
 #srp-page .search-button {
@@ -1123,7 +1123,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   margin-top: -10px;
 }
 .top-pagination .pagination > li > a {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   position: relative;
   bottom: -10px;
 }
@@ -1282,69 +1282,87 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 }
 /************  LIST VIEW  ************/
 .search-view-list article {
-  margin-bottom: 25px;
   padding: 0;
   width: 100%;
+  margin-bottom: 30px;
   overflow: hidden;
-  background: #f1f0ec;
+  background: #f1f1f1;
+}
+.search-view-list .row:first-child {
+  margin-top: 20px;
+}
+.search-view-list .row:last-child article:last-child {
+  border-bottom: 0;
 }
 .search-view-list .article-header {
   position: absolute;
   top:0;
   left:0;
   width: 100%;
+  padding: 0 !important;
+  background-color: transparent !important;
 }
 .search-view-list .article-header h3 {
   font-size: 1.6em;
+  color: #000 !important;
+  float: left;
+  padding: 10px 0 0 10px;
 }
 .search-view-list .article-header h3 span{
   font-size: .8em;
+  color: #999 !important;
 }
 .search-view-list .article-header .vehicle-price {
   position: absolute;
+  top: 10px;
   right: 0;
-  top: 0;
-  height: 100%;
-  padding: 10px 15px 0;
-  font-size: 1.9em;
+  padding: 5px 8px;
+  font-size: 1.3em;
   border-radius: 0;
+  font-weight: bold;
 }
 .search-view-list .article-desc,
 .search-view-list .article-image-container {
-  float: left;
-  width: 50%;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  margin-top: 65px;
+}
+.search-view-list .article-image-container {
+  position: relative;
+}
+.search-view-list .article-image-container a {
+  display: block;
+/*  margin-top: 50px;*/
 }
 .search-view-list .article-image-container img {
-  margin-top: 50px;
   width: 100%;
 }
 .search-view-list .article-desc {
-  margin-top: 58px;
+/*  margin-top: 58px;*/
   font-size: 1em;
 }
 .search-view-list .article-desc dt,
 .search-view-list .article-desc dd {
-  padding: 5px 5px 0 15px;
+  padding: 0 0 0 10px;
 }
 .search-view-list .article-desc dt .glyphicon {
   display: none;
 }
 .search-view-list .article-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  background-color: #d4d3d1;
-  padding: 5px 10px;
+  margin-top: 10px;
+  padding-top: 5px;
+  background: #fff;
 }
 .search-view-list .article-footer .badge {
-  color: #333;
+  color: #999;
+  font-weight: normal;
   background: transparent;
 }
 .search-view-list .image-counter {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  right: 0;
   color: #fff;
   font-weight: normal;
   background: #2e2f31;
@@ -2099,8 +2117,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     width: 49%;
   }
   #srp-page .action-group-mobile {
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+    background-color: #f1c40f;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -2110,25 +2127,29 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   #srp-page .action-group-mobile .btn {
     border-radius: 0;
     background-color: transparent;
-    color: #333;
+    color: #9c7d01;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-left: 1px solid #ccc;
+    border-bottom-color: #ba9502;
+  }
+  #srp-page .action-group-mobile .btn:last-child {
+    border-left: 1px solid #ba9502;
   }
   #srp-page .action-group-mobile .btn .glyphicon {
-    color: #f1c40f;
+    color: #fff;
   }
   #srp-page .action-group-mobile .btn:focus,
   #srp-page .action-group-mobile .btn:hover,
   #srp-page .action-group-mobile .btn.active {
-    background-color: #f1c40f;
-    color: #333;
+    background-color: #2e2f31;
+    color: #fff;
+    border-bottom-color: #999;
   }
   #srp-page .action-group-mobile .btn:focus .glyphicon,
   #srp-page .action-group-mobile .btn:hover .glyphicon,
   #srp-page .action-group-mobile .btn.active .glyphicon {
-    color: #fff;
+
   }
   #srp-page .page-sorting {
     padding: 0;
