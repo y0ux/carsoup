@@ -13,14 +13,27 @@ $zipCode = isset($_GET['zipCode']) && $_GET['zipCode']? ucwords($_GET['zipCode']
         <section id="srp-page">
         
           <!-- header -->
-          <header class="">
+          <header class="row">
             <h1 class="section-title col-md-7 col-sm-8"><?php echo $make.$model ?> <span class="h4 subtitle"><?php echo $type ?> </span></h1>
             <!--div class="h5 col-md-10 col-sm-8 col-xs-12 reset-margin-padding subtitle">
               <div class="h4 reset-margin-padding"><?php echo $price ?>  - <span class="glyphicon glyphicon-map-marker"></span> <?php echo $zipCode ?> <span class="geocode-zipcode" data-value="<?php echo $zipCode ?>"><span></div>
               <div>(3,500 results)</div>
             </div-->
-            <div class="action-group col-lg-4 col-md-5 col-sm-4 col-xs-12 pull-right text-right hidden-xs">
-              <a class="btn btn-lg btn-default" href="/"><span class="glyphicon glyphicon-filter"></span> Filter</a>
+            <div class="action-group col-lg-4 col-md-5 col-sm-4 col-xs-12 pull-right text-right hidden-sm hidden-xs">
+              <!--button class="btn btn-lg btn-default relevant button-expand-xxs" data-target="#filterModal" data-toggle="modal" id="filter-button">
+                <span class="glyphicon glyphicon-filter"></span>
+                Filter
+              </button-->
+              <!--a class="btn btn-lg btn-default" href="/"><span class="glyphicon glyphicon-filter"></span> Filter</a-->
+              <a class="btn btn-lg btn-default search-button fl" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
+            </div>
+            <div class="action-group col-lg-4 col-md-5 col-sm-4 col-xs-12 pull-right text-right visible-sm visible-xs">
+              
+              <button class="btn btn-lg btn-default relevant button-expand-xxs" data-toggle="offcanvas">
+                <span class="glyphicon glyphicon-filter"></span>
+                Filter
+              </button>
+              <!--a class="btn btn-lg btn-default" href="/"><span class="glyphicon glyphicon-filter"></span> Filter</a-->
               <a class="btn btn-lg btn-default search-button" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
             </div>
           </header>

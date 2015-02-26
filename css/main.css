@@ -1129,7 +1129,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 }
 .top-pagination .pagination > li.active  > a {
   border-bottom: 5px solid #f1c40f;
-  margin: 0;
 }
 .bottom-pagination {
   border-top: 5px solid #f1f0ec;
@@ -1962,7 +1961,49 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   padding-bottom: 15px;
   margin: 0;
 }
-
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .row-offcanvas-right .offcanvas-container {
+    right: 0; /* starting position for transition for occur */
+  }
+  .row-offcanvas-left .offcanvas-container {
+    left: 0; /* starting position for transition for occur */
+  }
+  .row-offcanvas-right.active .offcanvas-container {
+    right: 50%; /* 6 columns */
+  }
+  .row-offcanvas-left.active .offcanvas-container {
+    left: 50%; /* 6 columns */
+  }
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+  .offcanvas-container {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+  .content-offcanvas {
+    position: relative;
+    width: 100%;
+  }
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */

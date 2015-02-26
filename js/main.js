@@ -3,6 +3,10 @@
   *****************/
 $(document).ready(function() {
   
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('.row-offcanvas').toggleClass('active')
+  });
+  
   $('.setPopover').each(function(){
     var placement = $(this).data('placement');
     if (!placement)
