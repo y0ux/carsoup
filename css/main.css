@@ -2196,6 +2196,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   #research.launch-soon .rocket {
     float: none;
   }
+  #site-footer {
+    padding-bottom: 40px;
+  }
   .mobile-list li {
     display: block;
     border-bottom: 1px dotted #c0392b;
