@@ -1035,6 +1035,10 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 #srp-page .page-header {
   margin: 0 0 10px ;
 }
+#srp-page > header {
+  border: 0;
+  padding-bottom: 0;
+}
 #srp-page .action-group {
   margin-top: 20px;
 }
