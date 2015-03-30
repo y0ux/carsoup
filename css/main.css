@@ -249,6 +249,9 @@ a.btn-google:hover,
   background: #737373;
   border-color: #8b9dc3;
 }
+a.label {
+  color: #fff;
+}
 .label-price {
   background: #f1c40f;
   color: #2e2f31;
@@ -1897,6 +1900,58 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
    ========================================================================== */
 
 /* ==========================================================================
+   Blog
+   ========================================================================== */
+#blog article {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+#blog article:first-child {
+  margin-top: 15px;
+}
+#blog article:last-child {
+/*  border-bottom: 0;*/
+}
+#blog article h2 {
+  margin-top: 0;
+}
+#blog article h2 a {
+  color: #000;
+}
+#blog .header {
+  position: relative;
+  margin-bottom: 15px;
+}
+#blog .featured h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  padding: 15px 0 15px 15px;
+  background-color: rgba(192, 57, 43,.8);
+}
+#blog .featured h2 a {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Blog Article
+   ========================================================================== */
+#blog-article .header {
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+#blog-article .main-image {
+  margin-bottom: 15px;
+}
+.fb-comments > span{
+  width: 100% !important;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 .top-footer {
@@ -2267,6 +2322,16 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   .full-width-xs {
     width: 100%;
+  }
+  #blog .blog-image {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #blog h2 {
+    text-align: left;
+  }
+  #blog .social {
+    margin-top: 15px;
   }
 }
 @media (max-width: 480px) {
@@ -2717,6 +2782,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   .submit-group{
     margin-bottom: 0;
+  }
+  #blog-article p {
+    font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
