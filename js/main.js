@@ -35,9 +35,8 @@ $(document).ready(function() {
       $('.hide-popover').click(hidePopover);
     });
   
-    var hidePopover = function(){
-      console.log('button');
-      console.log(this);
+    var hidePopover = function(event){
+      event.preventDefault();
       if ($(this).data('reference') != null)
         $($(this).data('reference')).popover('hide');
     }
