@@ -198,6 +198,21 @@ a.btn-callOA,
   background: #5f6064;
   border-bottom: 3px solid #2e2f31;
 }
+
+
+a.btn-transparent,
+.btn-transparent {
+  background: transparent;
+  border: 0px;
+  padding: 0;
+  vertical-align: baseline;
+}
+.btn-transparent:hover,
+.btn-transparent:focus {
+  background: transparent;
+  border: 0;
+}
+
 a.btn-line-white,
 .btn-line-white {
   background: transparent;
@@ -460,9 +475,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   max-width: 100%;
 }
 .form-divisor {
-  border-top: 1px solid #ccc;
-  margin-bottom: 20px;
-}
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
 .horizontal-line {
   position: relative;
   margin-top: 25px;

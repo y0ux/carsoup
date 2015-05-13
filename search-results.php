@@ -40,7 +40,35 @@
               <div class="col-lg-3  col-md-4 col-sm-3 sidebar-offcanvas">
                 <form class="sorting-box" action="srp.php" method="post">
                   <h4 class="h3 text-xxs-left"><span class="glyphicon glyphicon-filter"></span> Filter Search</h4>
-
+                  <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Make</strong>
+                    <ul class="list-unstyled">
+                      <li><button type="button" class="btn btn-transparent"><span class="glyphicon glyphicon-remove"></span></button> BMW</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Color</strong>
+                    <ul class="list-unstyled">
+                      <li><button type="button" class="btn btn-transparent"><span class="glyphicon glyphicon-remove"></span></button> Red</li>
+                      <li><button type="button" class="btn btn-transparent"><span class="glyphicon glyphicon-remove"></span></button> White</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Year</strong>
+                    <ul class="list-unstyled">
+                      <li><button type="button" class="btn btn-transparent"><span class="glyphicon glyphicon-remove"></span></button> 2015</li>
+                    </ul>
+                  </div>
+                  <div class="text-right">
+                    <a href="#">Clear all</a>
+                  </div>
+                  <div class="form-divisor"></div>
+                  
                   <div class="padding-left padding-right">
                     
                     <div class="form-group h5 text-xs-left text-xxs-left text-xxs-size-normal">
@@ -185,12 +213,15 @@
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">Select a Year</h4>
-                      </div>
-                      <div class="modal-body sorting-box">
-                        <div class="row">
+                        <br/>
+                        <div class="row sorting-box">
                           <div class="checkbox col-xs-4 col-xxs-6"><label>
                             <input type="checkbox" id="inlineCheckbox12" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> Any Year (167)</span>
                           </label></div>
+                        </div>
+                      </div>
+                      <div class="modal-body sorting-box">
+                        <div class="row">
                           <div class="checkbox col-xs-4 col-xxs-6"><label>
                             <input type="checkbox" id="inlineCheckbox13" value="option2"> <span class="checkbox-text"><span class="checkbox-box"></span><span class="glyphicon glyphicon-ok"></span> 2015 (3)</span>
                           </label></div>

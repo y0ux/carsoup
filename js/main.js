@@ -17,6 +17,32 @@ $(document).ready(function() {
     });
   });
   
+  $('#form-popover').popover({ 
+      html : true,
+      title: function() {
+        var title = $(this).data("title-ref");
+        return title != null? $(title).html() : '';
+      },
+      content: function() {
+        var content = $(this).data("content-ref");
+        return content != null? $(content).html() : '';
+      },
+      placement: function(popover,element) {
+        var placement = $(element).data("side");
+        return placement != null? placement : 'right';
+      }
+  }).on('shown.bs.popover',function(){
+      $('.hide-popover').click(hidePopover);
+    });
+  
+    var hidePopover = function(){
+      console.log('button');
+      console.log(this);
+      if ($(this).data('reference') != null)
+        $($(this).data('reference')).popover('hide');
+    }
+ 
+  
   /******************
     Geolocation
   *****************/
