@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
   });
   
-  $('#form-popover').popover({ 
+  $('.popover-trigger').popover({ 
       html : true,
       title: function() {
         var title = $(this).data("title-ref");
@@ -40,6 +40,10 @@ $(document).ready(function() {
       if ($(this).data('reference') != null)
         $($(this).data('reference')).popover('hide');
     }
+    
+    $('a.popover-trigger').click(function(event){
+      event.preventDefault();
+    });
  
   
   /******************

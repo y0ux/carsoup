@@ -29,7 +29,7 @@ $zipCode = isset($_GET['zipCode']) && $_GET['zipCode']? ucwords($_GET['zipCode']
             </div>
             
             <div class="col-sm-12">
-              <button class="btn btn-default search-button" id="form-popover" data-content-ref="#popover-form" data-side="bottom">234 results within 100 miles of 55110</button>
+              <a href="#" class="popover-trigger" id="form-popover" data-content-ref="#popover-form" data-side="bottom">234 results within 100 miles of 55110</a>
             </div>
             
             <div class="hidden">
