@@ -505,7 +505,7 @@ $(document).ready(function() {
   *****************/
   $('.view-button').click(function(event) {
     $(".view-button").removeClass('active');
-    $(this).addClass('active');
+    $(".view-button[data-view='"+$(this).data('view')+"']").addClass('active');
     if ($(this).data('target') && $(this).data('view')) {
       $($(this).data('target')).removeClass (function (index, css) {
           return (css.match (/\bsearch-view-\S+/g) || []).join(' ');
