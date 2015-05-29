@@ -19,13 +19,16 @@ $zipCode = isset($_GET['zipCode']) && $_GET['zipCode']? ucwords($_GET['zipCode']
               <div class="h4 reset-margin-padding"><?php //echo $price ?>  - <span class="glyphicon glyphicon-map-marker"></span> <?php //echo $zipCode ?> <span class="geocode-zipcode" data-value="<?php //echo $zipCode ?>"><span></div>
               <div>(3,500 results)</div>
             </div-->
-            <div class="action-group col-lg-4 col-md-5 col-sm-4 col-xs-12 pull-right text-right hidden-sm hidden-xs">
+            <div class="action-group col-lg-4 col-md-5 col-sm-4 col-xs-12 pull-right text-right hidden-xs">
               <!--button class="btn btn-lg btn-default relevant button-expand-xxs" data-target="#filterModal" data-toggle="modal" id="filter-button">
                 <span class="glyphicon glyphicon-filter"></span>
                 Filter
               </button-->
               <!--a class="btn btn-lg btn-default" href="/"><span class="glyphicon glyphicon-filter"></span> Filter</a-->
               <a class="btn btn-lg btn-default search-button fl" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
+              <button type="button" class="btn btn-lg btn-default view-button" value="grid-view" title="Grid View" data-target="#search-results" data-view="search-view-grid"><span class="glyphicon glyphicon-th"></span></button>
+              <button type="button" class="btn btn-lg btn-default view-button active" value="list-view" title="List View" data-target="#search-results" data-view="search-view-list"><span class="glyphicon glyphicon-th-list"></span></button>
+              
             </div>
             
             <div class="col-sm-12">
@@ -58,12 +61,14 @@ $zipCode = isset($_GET['zipCode']) && $_GET['zipCode']? ucwords($_GET['zipCode']
             
             <div class="action-group-mobile visible-xs">
               
-              <button class="btn btn-lg btn-default col-xs-6" data-toggle="offcanvas">
+              <button class="btn btn-lg btn-default col-xs-5 col-xxs-6" data-toggle="offcanvas">
                 <span class="glyphicon glyphicon-filter"></span>
                 Filter
               </button>
               <!--a class="btn btn-lg btn-default" href="/"><span class="glyphicon glyphicon-filter"></span> Filter</a-->
-              <a class="btn btn-lg btn-default search-button col-xs-6" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
+              <a class="btn btn-lg btn-default search-button col-xs-5 col-xxs-6" href="/"><span class="glyphicon glyphicon-search"></span> New</a>
+              <button type="button" class="btn btn-lg btn-default view-button col-xs-1 hidden-xxs" value="grid-view" title="Grid View" data-target="#search-results" data-view="search-view-grid"><span class="glyphicon glyphicon-th"></span></button>
+              <button type="button" class="btn btn-lg btn-default view-button active col-xs-1 hidden-xxs" value="list-view" title="List View" data-target="#search-results" data-view="search-view-list"><span class="glyphicon glyphicon-th-list"></span></button>
             </div>
           </header>
           

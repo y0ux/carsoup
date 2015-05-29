@@ -1064,9 +1064,15 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   color: #eee;
   background: #777;
 }
+#srp-page .view-button,
 #srp-page .search-button {
   color: #333;
   background: #d4d3d1;
+}
+#srp-page .view-button.active {
+  color: #ccc;
+  background: #777;
+  border-color: #adadad;
 }
 .featured-dealer {
   background: #eee;
@@ -1271,8 +1277,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   font-weight: normal;
   background: #2e2f31;
   background-color: rgba(46,47,49,.8);
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 .search-view-grid .article-header .vehicle-price {
   color: #2e2f31;
@@ -1283,8 +1287,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   top: 5px;
   background-color: #f1c40f;
   background-color: rgba(241,196,15,.8);
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
 }
 .search-view-grid .article-desc {
   color: #7b7660;
@@ -1345,10 +1347,14 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 }
 .search-view-list .article-desc,
 .search-view-list .article-image-container {
-  display: inline-block;
+  display: block;
+  float: left;
   width: 49%;
   vertical-align: top;
   margin-top: 65px;
+}
+.search-view-list .article-desc {
+  float-right: right;
 }
 .search-view-list .article-image-container {
   position: relative;
@@ -1372,6 +1378,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   display: none;
 }
 .search-view-list .article-footer {
+  clear: both;
   margin-top: 10px;
   padding-top: 5px;
   background: #fff;
