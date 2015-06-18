@@ -9,6 +9,7 @@
       <title>CycleSoup.com :: Your search engine for all engines (TM)</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width">
+      <meta name="robots" content="nofollow" />
 
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/slider.css">
