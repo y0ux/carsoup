@@ -516,7 +516,8 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
 .navbar-default {
   background: #2e2f31;
   border: 0;
-  box-shadow: 0 4px 9px #222;
+  /*box-shadow: 0 4px 9px #222;*/
+  border-bottom: 3px solid #fff;
 }
 .nav-logo {
   padding: 10px 0;
