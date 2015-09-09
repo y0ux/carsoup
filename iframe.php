@@ -30,7 +30,7 @@
       </div>
     </header>
     
-    <iframe src="http://www.centurypwrsports.com/m/showcase_unit.htm?id=887533&status=2" style="width:100%; border: none;"></iframe>
+    <iframe src="http://www.centurypwrsports.com/m/showcase_unit.htm?id=887533&status=2" style="width:100%; border: none; position: fixed; height: 100%"></iframe>
   
     
     <!-- javascript loaders -->
