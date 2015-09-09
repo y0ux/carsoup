@@ -2062,6 +2062,25 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   margin: 0;
 }
 /*
+ * Iframe 
+ * --------------------------------------------------
+ */
+.button-margin-top {
+  margin-top: 20px;
+}
+/*
+ * Miscellaneous 
+ * --------------------------------------------------
+ */
+.inline-center {
+  display: inline-block;
+  text-align: center;
+}
+.float-none {
+  float: none !important;
+}
+
+/*
  * Off Canvas
  * --------------------------------------------------
  */
@@ -2355,6 +2374,11 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   #blog .social {
     margin-top: 15px;
+  }
+  .button-margin-top {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media (max-width: 480px) {
