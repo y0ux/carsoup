@@ -2518,7 +2518,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     padding: 10px 10px; 
     border-top: 1px #eee dashed;
   }
-  .menu-footer .nav:last-child .nav-item:last-child a {
+  .menu-footer .nav-group .last-item a {
     border-bottom: 1px #eee dashed;
   }
   #site-footer .menu-footer .nav .nav-item > a:hover {

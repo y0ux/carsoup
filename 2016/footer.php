@@ -60,7 +60,7 @@
             </div><!-- .nav -->
             <div class="nav nav-group col-sm-4">
               <div class="nav-item"><a href="#"><span>Scooters</span> Motorcycles For Sale</a></div>
-              <div class="nav-item"><a href="#"><span>Other</span> Motorcycles For Sale</a></div>
+              <div class="nav-item last-item"><a href="#"><span>Other</span> Motorcycles For Sale</a></div>
             </div><!-- .nav -->
           </div><!-- .container -->
 
@@ -89,15 +89,15 @@
                 <div class="nav-item"><a href="#"><span>Vespa</span> Motorcycles For Sale</a></div>
                 <div class="nav-item"><a href="#"><span>Victory</span> Motorcycles For Sale</a></div>
                 <div class="nav-item"><a href="#"><span>Yamaha</span> Motorcycles For Sale</a></div>
-                <div class="nav-item"><a href="#"><span>Zero</span> Motorcycles For Sale</a></div>
+                <div class="nav-item last-item"><a href="#"><span>Zero</span> Motorcycles For Sale</a></div>
               </div><!-- .nav -->
             </div><!-- .navbar-collapse -->
             <div class="text-center">
               <button class="btn btn-callOA navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseNav1">
-                <div class="more">More</div>
-                <div class="fa fa-chevron-down more"></div>
-                <i class="fa fa-chevron-up less"></i>
-                <div class="less">Less</div>              
+                <span class="more">More</span>
+                <span class="fa fa-chevron-down more"></span>
+                <span class="fa fa-chevron-up less"></span>
+                <span class="less">Less</span>              
               </button>
             </div>
           </div><!-- .container -->
@@ -127,7 +127,7 @@
                 <div class="nav-item"><a href="#"><span>Honda VTX1300</span> For Sale</a></div>
                 <div class="nav-item"><a href="#"><span>Honda VTX1800</span> For Sale</a></div>
                 <div class="nav-item"><a href="#"><span>Yamaha Zuma</span> For Sale</a></div>
-                <div class="nav-item"><a href="#"><span>Harley-Davidson Road Glide</span> For Sale</a></div>
+                <div class="nav-item last-item"><a href="#"><span>Harley-Davidson Road Glide</span> For Sale</a></div>
               </div><!-- .nav -->
             </div><!-- .navbar-collapse -->
             <div class="text-center">
