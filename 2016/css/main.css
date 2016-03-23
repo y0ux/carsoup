@@ -11,7 +11,6 @@ body {
 header {
   font-family: 'RobotoCondensed-Light', 'Roboto Condensed Light', 'Roboto Condensed';
 }
-
 section, aside {
   margin-bottom: 15px;
 }
@@ -611,7 +610,6 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   color: #fff;
   position: absolute;
   top: 0;
-  right: 20%;
 }
 .header-badge .content {
   background: #c00;
@@ -2868,6 +2866,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
     line-height: 35px;
   }
   .header-badge {
+    right: 10%;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
@@ -2975,6 +2974,7 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   }
   .frontpage-bg > img {
     height: 100%;
+    width: 100%;
   }
   .frontpage-search {
     width: 60%;
@@ -3049,6 +3049,9 @@ ul.rl-sm-4, ul.rl-sm-3, ul.rl-sm-2, ul.rl-sm-1 {
   .frontpage-bg > img {
     height: auto;
     max-width: 100%;
+  }
+  .header-badge {
+    right: 20%;
   }
   #dealer-search-manufacturer form button {
     margin-top: 15px;
